@@ -1,0 +1,13 @@
+FROM alpine:3.13
+
+VOLUME /mnt/data
+
+WORKDIR /app
+
+RUN apk update && \
+    apk add --no-cache bash curl unzip && \
+    rm -rf /var/cache/apk/*
+
+COPY ./build/scripts/download.sh /app/
+
+CMD ["/bin/bash", "/app/download.sh"]

@@ -1,0 +1,20 @@
+FROM maven:3-openjdk-11 AS build
+
+WORKDIR /usr/src/langdb
+
+COPY . /usr/src/langdb
+
+RUN mvn -pl :langdb-transform -am -DskipTests clean package
+
+# ============================================================================
+
+FROM openjdk:11-jre
+
+VOLUME /mnt/data
+
+WORKDIR /app
+
+COPY --from=build /usr/src/langdb/transform/target/langdb-transform-1.0.0.jar /app/
+COPY ./build/scripts/transform.sh /app/
+
+CMD ["/bin/bash", "/app/transform.sh"]
