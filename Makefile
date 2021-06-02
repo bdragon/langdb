@@ -4,11 +4,12 @@ LOGNAME := $(shell logname)
 UID := $(shell id -u ${LOGNAME})
 GID := $(shell id -g ${LOGNAME})
 
-all: download
+all: download transform
 .PHONY: all
 
 clean:
 	docker rmi $(DOCKER_REPO)/langdb-download &>/dev/null || true
+	docker rmi $(DOCKER_REPO)/langdb-transform &>/dev/null || true
 	rm -rf $(TOP_DIR)/data/*
 .PHONY: clean
 
@@ -38,3 +39,22 @@ download: build-download
 		--volume=$(TOP_DIR)/data:/mnt/data \
 		$(DOCKER_REPO)/langdb-download
 .PHONY: download
+
+# Builds the langdb-transform Docker image.
+build-transform:
+	docker build \
+		--rm \
+		-f $(TOP_DIR)/transform/Dockerfile \
+		-t $(DOCKER_REPO)/langdb-transform \
+		$(TOP_DIR)/transform
+.PHONY: build-transform
+
+# Converts raw sources to JSON format.
+transform: build-transform
+	docker run \
+		--rm \
+		-it \
+		--user=$(UID):$(GID) \
+		--volume=$(TOP_DIR)/data:/mnt/data \
+		$(DOCKER_REPO)/langdb-transform
+.PHONY: transform
