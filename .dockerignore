@@ -1,0 +1,12 @@
+*.iml
+**/.idea/
+**/target/
+
+.git/
+.gitignore
+
+build/
+load/migrations/
+
+.dockerignore
+Makefile
