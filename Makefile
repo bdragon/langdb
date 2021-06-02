@@ -4,7 +4,7 @@ LOGNAME := $(shell logname)
 UID := $(shell id -u ${LOGNAME})
 GID := $(shell id -g ${LOGNAME})
 
-all: download extract transform load
+all: download extract transform load build
 .PHONY: all
 
 clean:
@@ -12,6 +12,7 @@ clean:
 	docker rmi $(DOCKER_REPO)/langdb-extract &>/dev/null || true
 	docker rmi $(DOCKER_REPO)/langdb-transform &>/dev/null || true
 	docker rmi $(DOCKER_REPO)/langdb-load &>/dev/null || true
+	docker rmi $(DOCKER_REPO)/langdb &>/dev/null || true
 	rm -rf $(TOP_DIR)/data/*
 .PHONY: clean
 
@@ -149,3 +150,14 @@ load: build-load
 	sleep 3 ;\
 	docker network rm langdb-load # &>/dev/null || true
 .PHONY: load
+
+# Builds the langdb Docker image, copying data/sql/langdb.sql
+# to /docker-entrypoint-initdb.d/ so that it will be applied when the
+# container starts.
+build:
+	docker build \
+		--rm \
+		-f $(TOP_DIR)/build/Dockerfile \
+		-t $(DOCKER_REPO)/langdb \
+		$(TOP_DIR)
+.PHONY: build
