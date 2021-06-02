@@ -1,0 +1,45 @@
+FROM maven:3-openjdk-11 AS build
+
+COPY . /usr/src/langdb
+
+WORKDIR /usr/src/langdb
+
+RUN mvn -pl :langdb-extract -am -DskipTests clean package
+
+# ============================================================================
+
+FROM openjdk:11-jre
+
+ARG CHROMEDRIVER_VERSION=90.0.4430.24
+
+ENV DISPLAY=":0.0"
+ENV PATH=/opt/drivers:$PATH
+
+VOLUME /mnt/data
+
+WORKDIR /tmp
+
+RUN mkdir -p /app /opt/drivers
+
+RUN set -eu ;\
+    wget -q https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip ;\
+    unzip -q ./chromedriver_linux64.zip ;\
+    mv ./chromedriver /opt/drivers/ ;\
+    chmod a+x /opt/drivers/chromedriver ;\
+    rm ./chromedriver_linux64.zip ;\
+    touch /var/log/chromedriver.log ;\
+    chmod 666 /var/log/chromedriver.log
+
+RUN set -eu ;\
+    wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ;\
+    apt-get update ;\
+    apt-get install -y ./google-chrome-stable_current_amd64.deb ;\
+    rm ./google-chrome-stable_current_amd64.deb ;\
+    rm -rf /var/lib/apt/lists/*
+
+COPY --from=build /usr/src/langdb/extract/target/langdb-extract-1.0.0.jar /app/
+COPY ./build/scripts/extract.sh /app/
+
+WORKDIR /app
+
+CMD ["/bin/bash", "/app/extract.sh"]
