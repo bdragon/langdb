@@ -1,5 +1,7 @@
 # langdb
 
+[![CI](https://github.com/bdragon/langdb/actions/workflows/ci.yml/badge.svg)](https://github.com/bdragon/langdb/actions/workflows/ci.yml)
+
 ## Introduction
 
 This project builds a database of standards data related to [BCP 47 language
