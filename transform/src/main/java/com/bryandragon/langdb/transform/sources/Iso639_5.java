@@ -1,7 +1,7 @@
 package com.bryandragon.langdb.transform.sources;
 
-import com.bryandragon.langdb.transform.format.CsvReader;
-import com.bryandragon.langdb.transform.format.JsonWriter;
+import com.bryandragon.langdb.common.format.CsvReader;
+import com.bryandragon.langdb.common.format.JsonWriter;
 
 import java.io.IOException;
 import java.io.Reader;

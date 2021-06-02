@@ -1,4 +1,4 @@
-package com.bryandragon.langdb.transform.format;
+package com.bryandragon.langdb.common.format;
 
 import org.junit.jupiter.api.Test;
 

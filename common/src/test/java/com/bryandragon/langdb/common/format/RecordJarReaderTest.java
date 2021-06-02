@@ -1,4 +1,4 @@
-package com.bryandragon.langdb.transform.format;
+package com.bryandragon.langdb.common.format;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ class RecordJarReaderTest {
   @Test
   void testEmptyReader() {
     BufferedReader source = new BufferedReader(Reader.nullReader());
-    com.bryandragon.langdb.common.format.RecordJarReader subject = new com.bryandragon.langdb.common.format.RecordJarReader(source);
+    RecordJarReader subject = new RecordJarReader(source);
 
     assertDoesNotThrow(() -> {
       Iterator<Map<String, String>> it = subject.iterator();
@@ -35,7 +35,7 @@ class RecordJarReaderTest {
             "%%\n" +
             "%%\n";
     BufferedReader source = new BufferedReader(new StringReader(text));
-    com.bryandragon.langdb.common.format.RecordJarReader subject = new com.bryandragon.langdb.common.format.RecordJarReader(source);
+    RecordJarReader subject = new RecordJarReader(source);
 
     assertDoesNotThrow(() -> {
       Iterator<Map<String, String>> it = subject.iterator();
@@ -59,7 +59,7 @@ class RecordJarReaderTest {
             "Name: bar\r\n" +
             "%%\r\n";
     BufferedReader source = new BufferedReader(new StringReader(text));
-    com.bryandragon.langdb.common.format.RecordJarReader subject = new com.bryandragon.langdb.common.format.RecordJarReader(source);
+    RecordJarReader subject = new RecordJarReader(source);
 
     assertDoesNotThrow(() -> {
       Iterator<Map<String, String>> it = subject.iterator();
@@ -90,7 +90,7 @@ class RecordJarReaderTest {
             "Name: The trailing whitespace on this line will be preserved.   \\\n" +
             "%%\n";
     BufferedReader source = new BufferedReader(new StringReader(text));
-    com.bryandragon.langdb.common.format.RecordJarReader subject = new com.bryandragon.langdb.common.format.RecordJarReader(source);
+    RecordJarReader subject = new RecordJarReader(source);
 
     assertDoesNotThrow(() -> {
       Iterator<Map<String, String>> it = subject.iterator();
