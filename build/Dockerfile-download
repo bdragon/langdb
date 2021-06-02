@@ -8,6 +8,6 @@ RUN apk update && \
     apk add --no-cache bash curl && \
     rm -rf /var/cache/apk/*
 
-COPY ./download.sh /app/
+COPY ./build/scripts/download.sh /app/
 
 CMD ["/bin/bash", "/app/download.sh"]

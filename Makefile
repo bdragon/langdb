@@ -17,9 +17,9 @@ clean:
 build-download:
 	docker build \
 		--rm \
-		-f $(TOP_DIR)/download/Dockerfile \
+		-f $(TOP_DIR)/build/Dockerfile-download \
 		-t $(DOCKER_REPO)/langdb-download \
-		$(TOP_DIR)/download
+		$(TOP_DIR)
 .PHONY: build-download
 
 # Downloads sources.
@@ -44,9 +44,9 @@ download: build-download
 build-transform:
 	docker build \
 		--rm \
-		-f $(TOP_DIR)/transform/Dockerfile \
+		-f $(TOP_DIR)/build/Dockerfile-transform \
 		-t $(DOCKER_REPO)/langdb-transform \
-		$(TOP_DIR)/transform
+		$(TOP_DIR)
 .PHONY: build-transform
 
 # Converts raw sources to JSON format.

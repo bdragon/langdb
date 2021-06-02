@@ -15,6 +15,6 @@ VOLUME /mnt/data
 WORKDIR /app
 
 COPY --from=build /usr/src/langdb/transform/target/langdb-transform-1.0.0.jar /app/
-COPY ./transform.sh /app/
+COPY ./build/scripts/transform.sh /app/
 
 CMD ["/bin/bash", "/app/transform.sh"]
