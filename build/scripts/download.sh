@@ -37,4 +37,7 @@ download https://unicode.org/iso15924/iso15924.txt
 # IANA Language Subtag Registry
 download https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 
+# IANA Language Tags Extension Registry
+download https://www.iana.org/assignments/language-tag-extensions-registry/language-tag-extensions-registry
+
 echo "Done."

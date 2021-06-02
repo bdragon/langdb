@@ -32,6 +32,7 @@ build-download:
 #   * data/raw/iso-639-3_Retirements.tab
 #   * data/raw/iso639-5.tsv
 #   * data/raw/language-subtag-registry
+#   * data/raw/language-tag-extensions-registry
 download: build-download
 	docker run \
 		--rm \

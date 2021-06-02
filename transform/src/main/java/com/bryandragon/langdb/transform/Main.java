@@ -45,6 +45,10 @@ public final class Main {
           utf8Reader(dataDir.resolve("raw/language-subtag-registry")),
           utf8Writer(dataDir.resolve("json/language-subtag-registry.json")));
 
+      IanaLanguageTagExtensionsRegistry.toJson(
+          utf8Reader(dataDir.resolve("raw/language-tag-extensions-registry")),
+          utf8Writer(dataDir.resolve("json/language-tag-extensions-registry.json")));
+
       System.exit(0);
     } catch (IOException e) {
       e.printStackTrace(System.err);
