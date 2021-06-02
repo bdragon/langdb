@@ -17,17 +17,18 @@ import static com.bryandragon.langdb.load.Helpers.nonEmptyText;
 
 public final class IanaLanguageSubtagRegistry {
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement stmt = conn.prepareStatement(
-        "INSERT INTO subtag (" +
-            "  type, id, description, added, deprecated, preferred_value, suppress_script, " +
-            "  macrolanguage, scope, comments" +
-            ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+    PreparedStatement stmt =
+        conn.prepareStatement(
+            "INSERT INTO subtag ("
+                + "  type, id, description, added, deprecated, preferred_value, suppress_script, "
+                + "  macrolanguage, scope, comments"
+                + ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
 
     ObjectMapper objectMapper = new ObjectMapper();
     List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
 
     try {
-      System.out.println("Loading IANA Language Subtag Registry...");
+      System.out.println("Loading IANA Language Subtag Registry ...");
 
       for (Map<String, String> elem : elems) {
         if (elem.containsKey("File-Date")) {

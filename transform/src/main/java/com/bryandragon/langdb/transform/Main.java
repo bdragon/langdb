@@ -57,18 +57,16 @@ public final class Main {
   }
 
   /**
-   * Returns a reader for the UTF-8-encoded file located at {@code path}, skipping BOM
-   * if present.
-   **/
+   * Returns a reader for the UTF-8-encoded file located at {@code path}, skipping BOM if present.
+   */
   private static BufferedReader utf8Reader(Path path) throws IOException {
     BufferedInputStream is = new BufferedInputStream(new FileInputStream(path.toFile()));
     return new BufferedReader(new InputStreamReader(skipBomUtf8(is), StandardCharsets.UTF_8));
   }
 
   /**
-   * Returns a writer for the UTF-8-encoded file located at {@code path}, creating it if
-   * necessary.
-   **/
+   * Returns a writer for the UTF-8-encoded file located at {@code path}, creating it if necessary.
+   */
   private static BufferedWriter utf8Writer(Path path) throws IOException {
     File file = path.toFile();
     if (!file.exists()) {

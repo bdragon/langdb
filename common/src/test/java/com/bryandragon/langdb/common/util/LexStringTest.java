@@ -33,24 +33,30 @@ class LexStringTest {
         Arguments.of("Qx", "Rc", List.of("Qx", "Qy", "Qz", "Ra", "Rb", "Rc")),
         Arguments.of("QX", "RC", List.of("QX", "QY", "QZ", "RA", "RB", "RC")),
         Arguments.of("Rx", "Qc", List.of("Rx")),
-        Arguments.of("qaa", "qcc", List.of(
-            "qaa", "qab", "qac", "qad", "qae", "qaf", "qag", "qah", "qai", "qaj", "qak", "qal",
-            "qam", "qan", "qao", "qap", "qaq", "qar", "qas", "qat", "qau", "qav", "qaw", "qax",
-            "qay", "qaz", "qba", "qbb", "qbc", "qbd", "qbe", "qbf", "qbg", "qbh", "qbi", "qbj",
-            "qbk", "qbl", "qbm", "qbn", "qbo", "qbp", "qbq", "qbr", "qbs", "qbt", "qbu", "qbv",
-            "qbw", "qbx", "qby", "qbz", "qca", "qcb", "qcc"
-        )),
-        Arguments.of("Qaaa", "Qabx", List.of(
-            "Qaaa", "Qaab", "Qaac", "Qaad", "Qaae", "Qaaf", "Qaag", "Qaah", "Qaai", "Qaaj", "Qaak",
-            "Qaal", "Qaam", "Qaan", "Qaao", "Qaap", "Qaaq", "Qaar", "Qaas", "Qaat", "Qaau", "Qaav",
-            "Qaaw", "Qaax", "Qaay", "Qaaz", "Qaba", "Qabb", "Qabc", "Qabd", "Qabe", "Qabf", "Qabg",
-            "Qabh", "Qabi", "Qabj", "Qabk", "Qabl", "Qabm", "Qabn", "Qabo", "Qabp", "Qabq", "Qabr",
-            "Qabs", "Qabt", "Qabu", "Qabv", "Qabw", "Qabx"
-        )),
-        Arguments.of("QM", "QZ", List.of(
-            "QM", "QN", "QO", "QP", "QQ", "QR", "QS", "QT", "QU", "QV", "QW", "QX", "QY", "QZ"
-        ))
-    );
+        Arguments.of(
+            "qaa",
+            "qcc",
+            List.of(
+                "qaa", "qab", "qac", "qad", "qae", "qaf", "qag", "qah", "qai", "qaj", "qak", "qal",
+                "qam", "qan", "qao", "qap", "qaq", "qar", "qas", "qat", "qau", "qav", "qaw", "qax",
+                "qay", "qaz", "qba", "qbb", "qbc", "qbd", "qbe", "qbf", "qbg", "qbh", "qbi", "qbj",
+                "qbk", "qbl", "qbm", "qbn", "qbo", "qbp", "qbq", "qbr", "qbs", "qbt", "qbu", "qbv",
+                "qbw", "qbx", "qby", "qbz", "qca", "qcb", "qcc")),
+        Arguments.of(
+            "Qaaa",
+            "Qabx",
+            List.of(
+                "Qaaa", "Qaab", "Qaac", "Qaad", "Qaae", "Qaaf", "Qaag", "Qaah", "Qaai", "Qaaj",
+                "Qaak", "Qaal", "Qaam", "Qaan", "Qaao", "Qaap", "Qaaq", "Qaar", "Qaas", "Qaat",
+                "Qaau", "Qaav", "Qaaw", "Qaax", "Qaay", "Qaaz", "Qaba", "Qabb", "Qabc", "Qabd",
+                "Qabe", "Qabf", "Qabg", "Qabh", "Qabi", "Qabj", "Qabk", "Qabl", "Qabm", "Qabn",
+                "Qabo", "Qabp", "Qabq", "Qabr", "Qabs", "Qabt", "Qabu", "Qabv", "Qabw", "Qabx")),
+        Arguments.of(
+            "QM",
+            "QZ",
+            List.of(
+                "QM", "QN", "QO", "QP", "QQ", "QR", "QS", "QT", "QU", "QV", "QW", "QX", "QY",
+                "QZ")));
   }
 
   @Test

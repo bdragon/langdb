@@ -10,5 +10,4 @@ public final class Helpers {
   public static Date nonEmptyDate(String value) {
     return (value == null || value.isEmpty()) ? null : Date.valueOf(value);
   }
-
 }

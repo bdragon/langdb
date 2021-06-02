@@ -11,21 +11,23 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-import static com.bryandragon.langdb.load.Helpers.*;
+import static com.bryandragon.langdb.load.Helpers.nonEmptyDate;
+import static com.bryandragon.langdb.load.Helpers.nonEmptyText;
 
 public final class IanaLanguageTagExtensionsRegistry {
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement stmt = conn.prepareStatement(
-        "INSERT INTO subtag_ext (" +
-            "  id, description, comments, added, rfc, authority, contact_email, " +
-            "  mailing_list, url" +
-            ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);");
+    PreparedStatement stmt =
+        conn.prepareStatement(
+            "INSERT INTO subtag_ext ("
+                + "  id, description, comments, added, rfc, authority, contact_email, "
+                + "  mailing_list, url"
+                + ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);");
 
     ObjectMapper objectMapper = new ObjectMapper();
     List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
 
     try {
-      System.out.println("Loading IANA Language Tag Extensions Registry...");
+      System.out.println("Loading IANA Language Tag Extensions Registry ...");
 
       for (Map<String, String> elem : elems) {
         if (elem.containsKey("File-Date")) {
@@ -56,7 +58,7 @@ public final class IanaLanguageTagExtensionsRegistry {
 
   /**
    * Email addresses in the IANA Language Tag Extensions Registry file are invalid for some reason,
-   * e.g., "cldr-contact&unicode.org". This function fixes them.
+   * e.g., "cldr-contact&unicode.org". This method fixes them.
    */
   private static String fixEmail(String email) {
     if (!email.contains("@") && email.contains("&")) {

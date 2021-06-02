@@ -7,11 +7,9 @@ import java.util.Arrays;
 import java.util.function.Predicate;
 
 public final class Helpers {
-  public static final byte[] BOM_UTF8 = new byte[]{(byte) 0xEF, (byte) 0xBB, (byte) 0xBF};
+  public static final byte[] BOM_UTF8 = new byte[] {(byte) 0xEF, (byte) 0xBB, (byte) 0xBF};
 
-  /**
-   * Skips BOM if present at the start of UTF-8-encoded {@code bis}.
-   */
+  /** Skips BOM if present at the start of UTF-8-encoded {@code bis}. */
   public static BufferedInputStream skipBomUtf8(BufferedInputStream bis) throws IOException {
     byte[] buf = new byte[BOM_UTF8.length];
     bis.mark(BOM_UTF8.length);
@@ -22,13 +20,9 @@ public final class Helpers {
     return bis;
   }
 
-  /**
-   * Consumes lines from {@code reader} while {@code predicate} is true.
-   */
-  public static BufferedReader skipLinesWhile(
-      BufferedReader reader,
-      Predicate<String> predicate
-  ) throws IOException {
+  /** Consumes lines from {@code reader} while {@code predicate} is true. */
+  public static BufferedReader skipLinesWhile(BufferedReader reader, Predicate<String> predicate)
+      throws IOException {
     while (true) {
       reader.mark(1024);
       String line = reader.readLine();

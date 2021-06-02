@@ -15,18 +15,20 @@ public final class CldrBcp47Extensions {
   private static final String DTD_PATH = "common/dtd/ldmlBCP47.dtd";
 
   /**
-   * Transforms a directory of LDML XML files, which contain valid attributes, keys, and types
-   * for BCP 47 extension U and T, into a single JSON file.
+   * Transforms a directory of LDML XML files, which contain valid attributes, keys, and types for
+   * BCP 47 extension U and T, into a single JSON file.
    *
-   * A single file is emitted because, per UTS #35,
-   *   "The ldmlBCP47 files and supplementalData files that have the same root are all logically
-   *   part of the same file; they are simply split into separate files for convenience."
+   * <p>A single file is emitted because, per UTS #35, "The ldmlBCP47 files and supplementalData
+   * files that have the same root are all logically part of the same file; they are simply split
+   * into separate files for convenience."
    *
-   * @see <a href="https://unicode.org/reports/tr35/#Unicode_Locale_Extension_Data_Files">Unicode Technical Standard #35</a>
+   * @see <a href="https://unicode.org/reports/tr35/#Unicode_Locale_Extension_Data_Files">Unicode
+   *     Technical Standard #35</a>
    */
-  public static void toJson(Path cldrDir, BufferedWriter out) throws IOException, XMLStreamException {
-    File[] files = cldrDir.resolve("common/bcp47").toFile()
-        .listFiles((dir, name) -> name.endsWith(".xml"));
+  public static void toJson(Path cldrDir, BufferedWriter out)
+      throws IOException, XMLStreamException {
+    File[] files =
+        cldrDir.resolve("common/bcp47").toFile().listFiles((dir, name) -> name.endsWith(".xml"));
 
     if (files == null) {
       throw new IllegalArgumentException("CLDR directory is invalid or empty");
@@ -34,22 +36,23 @@ public final class CldrBcp47Extensions {
 
     // The LDML XML files reference a DTD file with a relative path, which does not work
     // when invoked from Java. Here we resolve the referenced DTD file with an absolute path.
-    XMLResolver xmlResolver = (publicId, systemId, baseURI, namespace) -> {
-      if (systemId != null && systemId.endsWith(DTD_PATH)) {
-        try {
-          return new FileInputStream(cldrDir.resolve(DTD_PATH).toFile());
-        } catch (FileNotFoundException e) {
-          e.printStackTrace(System.err);
-        }
-      }
-      return null;
-    };
+    XMLResolver xmlResolver =
+        (publicId, systemId, baseURI, namespace) -> {
+          if (systemId != null && systemId.endsWith(DTD_PATH)) {
+            try {
+              return new FileInputStream(cldrDir.resolve(DTD_PATH).toFile());
+            } catch (FileNotFoundException e) {
+              e.printStackTrace(System.err);
+            }
+          }
+          return null;
+        };
 
     XmlMapper xmlMapper = new XmlMapper();
     XMLInputFactory xmlFactory = XMLInputFactory.newFactory();
 
     // DTD resolution can be skipped altogether by uncommenting the next line.
-    //xmlFactory.setProperty(XMLInputFactory.SUPPORT_DTD, false);
+    // xmlFactory.setProperty(XMLInputFactory.SUPPORT_DTD, false);
     xmlFactory.setXMLResolver(xmlResolver);
 
     JsonMapper jsonMapper = new JsonMapper();
@@ -59,7 +62,8 @@ public final class CldrBcp47Extensions {
       jsonGenerator.writeStartArray();
 
       for (File file : files) {
-        XMLStreamReader xmlStreamReader = xmlFactory.createXMLStreamReader(new FileInputStream(file));
+        XMLStreamReader xmlStreamReader =
+            xmlFactory.createXMLStreamReader(new FileInputStream(file));
         LdmlBcp47 elem;
 
         try {

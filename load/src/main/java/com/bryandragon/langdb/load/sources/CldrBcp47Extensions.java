@@ -1,6 +1,7 @@
 package com.bryandragon.langdb.load.sources;
 
-import com.bryandragon.langdb.common.domain.cldr.*;
+import com.bryandragon.langdb.common.domain.cldr.Key;
+import com.bryandragon.langdb.common.domain.cldr.Type;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -11,26 +12,27 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
-import static com.bryandragon.langdb.load.Helpers.*;
+import static com.bryandragon.langdb.load.Helpers.nonEmptyText;
 
 public final class CldrBcp47Extensions {
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement insertKey = conn.prepareStatement(
-        "INSERT INTO subtag_ext_key (" +
-        "  ext_id, id, description, deprecated, preferred, alias, value_type, since" +
-        ") VALUES (?, ?, ?, ?, ?, ?, ?, ?);"
-    );
-    PreparedStatement insertType = conn.prepareStatement(
-        "INSERT INTO subtag_ext_key_type (" +
-        "  ext_id, key_id, id, description, deprecated, preferred, alias, since" +
-        ") VALUES (?, ?, ?, ?, ?, ?, ?, ?);"
-    );
+    PreparedStatement insertKey =
+        conn.prepareStatement(
+            "INSERT INTO subtag_ext_key ("
+                + "  ext_id, id, description, deprecated, preferred, alias, value_type, since"
+                + ") VALUES (?, ?, ?, ?, ?, ?, ?, ?);");
+
+    PreparedStatement insertType =
+        conn.prepareStatement(
+            "INSERT INTO subtag_ext_key_type ("
+                + "  ext_id, key_id, id, description, deprecated, preferred, alias, since"
+                + ") VALUES (?, ?, ?, ?, ?, ?, ?, ?);");
 
     ObjectMapper objectMapper = new ObjectMapper();
     List<Key> keys = objectMapper.readValue(source, new TypeReference<>() {});
 
     try {
-      System.out.println("Loading Unicode CLDR BCP 47 Extensions...");
+      System.out.println("Loading Unicode CLDR BCP 47 Extensions ...");
 
       for (Key key : keys) {
         System.out.printf("Key: %s\n", key.getName());

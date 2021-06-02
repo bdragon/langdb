@@ -24,9 +24,8 @@ public class CsvReader {
   public CsvReader(Reader source, char separator, boolean hasHeader, String[] columnNames) {
     this.source = source;
 
-    CsvSchema.Builder builder = CsvSchema.builder()
-        .setColumnSeparator(separator)
-        .setUseHeader(hasHeader);
+    CsvSchema.Builder builder =
+        CsvSchema.builder().setColumnSeparator(separator).setUseHeader(hasHeader);
 
     if (columnNames != null) {
       builder.addColumns(Arrays.asList(columnNames), CsvSchema.ColumnType.STRING);
@@ -36,9 +35,6 @@ public class CsvReader {
   }
 
   public MappingIterator<Map<String, String>> iterator() throws IOException {
-    return (new CsvMapper())
-        .readerFor(Map.class)
-        .with(this.schema)
-        .readValues(this.source);
+    return (new CsvMapper()).readerFor(Map.class).with(this.schema).readValues(this.source);
   }
 }

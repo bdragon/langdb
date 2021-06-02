@@ -49,17 +49,17 @@ public class UnM49 {
     // [1] See: https://datatables.net/reference/api/
 
     if (driver instanceof JavascriptExecutor) {
-      ((JavascriptExecutor) driver).executeScript(
-          "$('#downloadTableEN').DataTable().button().add(0, {" +
-          "  extend: 'csv'," +
-          "  charset: 'utf-8'," +
-          "  bom: false," +
-          "  fieldBoundary: '\"'," +
-          "  extension: '.csv'," +
-          "  filename: 'un-m49'," +
-          "  text: 'Parsable CSV'," +
-          "});"
-      );
+      ((JavascriptExecutor) driver)
+          .executeScript(
+              "$('#downloadTableEN').DataTable().button().add(0, {"
+                  + "  extend: 'csv',"
+                  + "  charset: 'utf-8',"
+                  + "  bom: false,"
+                  + "  fieldBoundary: '\"',"
+                  + "  extension: '.csv',"
+                  + "  filename: 'un-m49',"
+                  + "  text: 'Parsable CSV',"
+                  + "});");
     } else {
       throw new RuntimeException("Driver does not support JavaScript execution");
     }
@@ -69,9 +69,10 @@ public class UnM49 {
 
     // Poll for the downloaded file for up to 10s.
     long initialFileCount = countFiles(downloadsDir);
-    FluentWait<Path> wait = new FluentWait<>(downloadsDir)
-        .withTimeout(Duration.ofSeconds(10))
-        .pollingEvery(Duration.ofMillis(250));
+    FluentWait<Path> wait =
+        new FluentWait<>(downloadsDir)
+            .withTimeout(Duration.ofSeconds(10))
+            .pollingEvery(Duration.ofMillis(250));
     wait.until(dir -> countFiles(dir) > initialFileCount);
 
     File downloadedFile = downloadsDir.resolve("un-m49.csv").toFile();
@@ -79,8 +80,7 @@ public class UnM49 {
     JsonFactory jsonFactory = new JsonFactory();
 
     try (JsonGenerator jsonGenerator = jsonFactory.createGenerator(out)) {
-      CsvReader csvReader =
-          new CsvReader(new BufferedReader(new FileReader(downloadedFile)), ',');
+      CsvReader csvReader = new CsvReader(new BufferedReader(new FileReader(downloadedFile)), ',');
       Iterator<Map<String, String>> it = csvReader.iterator();
 
       jsonGenerator.writeStartArray();

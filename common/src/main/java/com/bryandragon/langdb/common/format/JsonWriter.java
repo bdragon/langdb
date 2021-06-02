@@ -11,8 +11,7 @@ import java.util.Iterator;
 public class JsonWriter {
   private static final int BATCH_SIZE = 100;
 
-  public JsonWriter() {
-  }
+  public JsonWriter() {}
 
   /**
    * Consumes {@code it} and writes items as a JSON array to {@code writer}, flushing periodically,

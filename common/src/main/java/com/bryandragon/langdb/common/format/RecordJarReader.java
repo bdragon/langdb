@@ -9,10 +9,11 @@ import java.util.Map;
 import java.util.Stack;
 
 /**
- * Parses text in record-jar format and produces an iterator of parsed records.
- * Closes the underlying reader when it has finished reading.
+ * Parses text in record-jar format and produces an iterator of parsed records. Closes the
+ * underlying reader when it has finished reading.
  *
- * @see <a href="https://tools.ietf.org/html/draft-phillips-record-jar-01">draft-phillips-record-jar-01</a>
+ * @see <a
+ *     href="https://tools.ietf.org/html/draft-phillips-record-jar-01">draft-phillips-record-jar-01</a>
  */
 public class RecordJarReader {
   private final Reader source;
@@ -32,9 +33,10 @@ public class RecordJarReader {
     private boolean eof;
 
     public RecordIterator(Reader source) {
-      this((source instanceof BufferedReader)
-          ? (BufferedReader) source
-          : new BufferedReader(source));
+      this(
+          (source instanceof BufferedReader)
+              ? (BufferedReader) source
+              : new BufferedReader(source));
     }
 
     public RecordIterator(BufferedReader source) {
@@ -75,9 +77,7 @@ public class RecordJarReader {
       return peekedRecord;
     }
 
-    /**
-     * Parses the next record from the underlying source and returns it.
-     */
+    /** Parses the next record from the underlying source and returns it. */
     private Map<String, String> parseRecord() throws IOException {
       if (eof) {
         return null;

@@ -5,8 +5,8 @@ import java.util.List;
 
 public final class LexString {
   /**
-   * Produces a list of all strings between {@code lo} and {@code hi}, inclusive, in
-   * lexicographical order.
+   * Produces a list of all strings between {@code lo} and {@code hi}, inclusive, in lexicographical
+   * order.
    */
   public static List<String> fill(String lo, String hi) {
     List<String> values = new ArrayList<>();
@@ -17,9 +17,7 @@ public final class LexString {
     return values;
   }
 
-  /**
-   * Returns the next string after {@code s} with the same length in lexicographical order.
-   */
+  /** Returns the next string after {@code s} with the same length in lexicographical order. */
   public static String nextAlpha(String s) {
     char[] buf = new char[s.length()];
     intToCharArray(charArrayToInt(s.toLowerCase().toCharArray()) + 1, buf);

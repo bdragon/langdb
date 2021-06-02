@@ -17,11 +17,12 @@ import static com.bryandragon.langdb.load.Helpers.nonEmptyText;
 
 public final class UnM49 {
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement insertRegion = conn.prepareStatement(
-        "INSERT INTO un_m49_region (id, name) VALUES (?, ?);");
+    PreparedStatement insertRegion =
+        conn.prepareStatement("INSERT INTO un_m49_region (id, name) VALUES (?, ?);");
 
-    PreparedStatement insertCountryOrArea = conn.prepareStatement(
-        "INSERT INTO un_m49_country_area (id, region, alpha2, name) VALUES (?, ?, ?, ?)");
+    PreparedStatement insertCountryOrArea =
+        conn.prepareStatement(
+            "INSERT INTO un_m49_country_area (id, region, alpha2, name) VALUES (?, ?, ?, ?)");
 
     ObjectMapper objectMapper = new ObjectMapper();
 
@@ -34,7 +35,7 @@ public final class UnM49 {
             .collect(Collectors.toSet());
 
     try {
-      System.out.println("Loading UN M49 regions...");
+      System.out.println("Loading UN M49 regions ...");
 
       for (Map.Entry<String, String> elem : regions) {
         System.out.println(elem.getKey());
@@ -47,7 +48,7 @@ public final class UnM49 {
 
       System.out.println();
 
-      System.out.println("Loading UN M49 countries/areas...");
+      System.out.println("Loading UN M49 countries/areas ...");
 
       for (Map<String, String> elem : countriesOrAreas) {
         System.out.println(elem.get("M49 Code"));

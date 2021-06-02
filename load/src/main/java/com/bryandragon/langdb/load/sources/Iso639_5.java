@@ -13,9 +13,8 @@ import java.util.Map;
 
 public final class Iso639_5 {
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement stmt = conn.prepareStatement(
-        "INSERT INTO iso_639_5 (id, name) VALUES (?, ?);"
-    );
+    PreparedStatement stmt =
+        conn.prepareStatement("INSERT INTO iso_639_5 (id, name) VALUES (?, ?);");
 
     ObjectMapper objectMapper = new ObjectMapper();
     List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});

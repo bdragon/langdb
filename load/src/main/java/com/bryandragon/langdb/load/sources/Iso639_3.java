@@ -15,26 +15,26 @@ import java.util.Map;
 import static com.bryandragon.langdb.load.Helpers.nonEmptyText;
 
 public final class Iso639_3 {
-  public static final Map<String, String> SCOPE = Map.of(
-      "I", "individual",
-      "M", "macrolanguage",
-      "S", "special"
-  );
+  public static final Map<String, String> SCOPE =
+      Map.of(
+          "I", "individual",
+          "M", "macrolanguage",
+          "S", "special");
 
-  public static final Map<String, String> TYPE = Map.of(
-  "A", "ancient",
-  "C", "constructed",
-  "E", "extinct",
-  "H", "historical",
-  "L", "living",
-  "S", "special"
-  );
+  public static final Map<String, String> TYPE =
+      Map.of(
+          "A", "ancient",
+          "C", "constructed",
+          "E", "extinct",
+          "H", "historical",
+          "L", "living",
+          "S", "special");
 
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement stmt = conn.prepareStatement(
-        "INSERT INTO iso_639_3 (id, part2t, part2b, part1, scope, type, name, comment) " +
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?);"
-    );
+    PreparedStatement stmt =
+        conn.prepareStatement(
+            "INSERT INTO iso_639_3 (id, part2t, part2b, part1, scope, type, name, comment) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?);");
 
     ObjectMapper objectMapper = new ObjectMapper();
     List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
@@ -64,14 +64,15 @@ public final class Iso639_3 {
 
   public static final class NameIndex {
     public static void load(File source, Connection conn) throws IOException, SQLException {
-      PreparedStatement stmt = conn.prepareStatement(
-          "INSERT INTO iso_639_3_name (id, print, inverted) VALUES (?, ?, ?);");
+      PreparedStatement stmt =
+          conn.prepareStatement(
+              "INSERT INTO iso_639_3_name (id, print, inverted) VALUES (?, ?, ?);");
 
       ObjectMapper objectMapper = new ObjectMapper();
       List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
 
       try {
-        System.out.println("Loading ISO 639-3 names...");
+        System.out.println("Loading ISO 639-3 name index ...");
 
         for (Map<String, String> elem : elems) {
           System.out.println(elem.get("Id"));
@@ -91,14 +92,14 @@ public final class Iso639_3 {
 
   public static final class Macrolanguage {
     public static void load(File source, Connection conn) throws IOException, SQLException {
-      PreparedStatement stmt = conn.prepareStatement(
-          "INSERT INTO iso_639_3_macrolanguage (m_id, i_id) VALUES (?, ?);");
+      PreparedStatement stmt =
+          conn.prepareStatement("INSERT INTO iso_639_3_macrolanguage (m_id, i_id) VALUES (?, ?);");
 
       ObjectMapper objectMapper = new ObjectMapper();
       List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
 
       try {
-        System.out.println("Loading ISO 639-3 macrolanguages...");
+        System.out.println("Loading ISO 639-3 macrolanguages ...");
 
         for (Map<String, String> elem : elems) {
           System.out.printf("%s > %s\n", elem.get("M_Id"), elem.get("I_Id"));
@@ -116,24 +117,25 @@ public final class Iso639_3 {
   }
 
   public static final class Deprecation {
-    public static final Map<String, String> REASON = Map.of(
-        "C", "change",
-        "D", "duplicate",
-        "M", "merge",
-        "N", "nonexistent",
-        "S", "split"
-    );
+    public static final Map<String, String> REASON =
+        Map.of(
+            "C", "change",
+            "D", "duplicate",
+            "M", "merge",
+            "N", "nonexistent",
+            "S", "split");
 
     public static void load(File source, Connection conn) throws IOException, SQLException {
-      PreparedStatement stmt = conn.prepareStatement(
-          "INSERT INTO iso_639_3_deprecation (id, reason, change_to, remedy, effective) " +
-              "VALUES (?, ?, ?, ?, ?);");
+      PreparedStatement stmt =
+          conn.prepareStatement(
+              "INSERT INTO iso_639_3_deprecation (id, reason, change_to, remedy, effective) "
+                  + "VALUES (?, ?, ?, ?, ?);");
 
       ObjectMapper objectMapper = new ObjectMapper();
       List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
 
       try {
-        System.out.println("Loading ISO 639-3 deprecations...");
+        System.out.println("Loading ISO 639-3 deprecations ...");
 
         for (Map<String, String> elem : elems) {
           System.out.println(elem.get("Id"));

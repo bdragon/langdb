@@ -44,8 +44,7 @@ public class Main {
       (new Iso639_2Changes(driver))
           .extractTo(fileOutputStream(dataDir.resolve("json/iso-639-2-changes.json")));
 
-      (new Iso3166_1(driver))
-          .extractTo(fileOutputStream(dataDir.resolve("json/iso-3166-1.json")));
+      (new Iso3166_1(driver)).extractTo(fileOutputStream(dataDir.resolve("json/iso-3166-1.json")));
 
       (new UnM49(driver, downloadsDir))
           .extractTo(fileOutputStream(dataDir.resolve("json/un-m49.json")));
@@ -59,9 +58,7 @@ public class Main {
     }
   }
 
-  /**
-   * Returns an output stream for the file located at {@code path}, creating it if necessary.
-   **/
+  /** Returns an output stream for the file located at {@code path}, creating it if necessary. */
   private static BufferedOutputStream fileOutputStream(Path path) throws IOException {
     File file = path.toFile();
     if (!file.exists()) {

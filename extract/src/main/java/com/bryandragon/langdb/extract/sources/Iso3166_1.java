@@ -29,7 +29,8 @@ public class Iso3166_1 {
     System.out.printf("Page title: %s\n", this.driver.getTitle());
 
     WebElement label = this.driver.findElement(By.xpath("//*[text()=\"Results per page:\"]"));
-    WebElement select = this.driver.findElement(RelativeLocator.with(By.tagName("select")).near(label));
+    WebElement select =
+        this.driver.findElement(RelativeLocator.with(By.tagName("select")).near(label));
     Select perPage = new Select(select);
 
     List<WebElement> tables = this.driver.findElements(By.cssSelector("table[role=grid]"));
@@ -43,12 +44,14 @@ public class Iso3166_1 {
     System.out.println("Showing all rows...");
     perPage.selectByVisibleText("300"); // Largest option is currently 300.
 
-    FluentWait<WebElement> wait = new FluentWait<>(table)
-        .withTimeout(Duration.ofSeconds(10))
-        .pollingEvery(Duration.ofMillis(250));
+    FluentWait<WebElement> wait =
+        new FluentWait<>(table)
+            .withTimeout(Duration.ofSeconds(10))
+            .pollingEvery(Duration.ofMillis(250));
     wait.until(t -> t.findElements(rowsSelector).size() > initialRowCount);
 
-    List<WebElement> ths = table.findElements(By.cssSelector("thead tr[role=rowheader] th[role=columnheader]"));
+    List<WebElement> ths =
+        table.findElements(By.cssSelector("thead tr[role=rowheader] th[role=columnheader]"));
     String[] fields = ths.stream().map(WebElement::getText).toArray(String[]::new);
 
     JsonFactory jsonFactory = new JsonFactory();

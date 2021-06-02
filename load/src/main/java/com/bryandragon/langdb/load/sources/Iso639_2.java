@@ -12,20 +12,17 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Must run after Iso639_3 runs.
- */
+/** Must run after Iso639_3 runs. */
 public final class Iso639_2 {
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement stmt = conn.prepareStatement(
-        "SELECT count(*) FROM iso_639_3 WHERE part2b = ?;"
-    );
+    PreparedStatement stmt =
+        conn.prepareStatement("SELECT count(*) FROM iso_639_3 WHERE part2b = ?;");
 
     ObjectMapper objectMapper = new ObjectMapper();
     List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
 
     try {
-      System.out.println("Verifying ISO 639-2 coverage...");
+      System.out.println("Verifying ISO 639-2 coverage ...");
 
       for (Map<String, String> elem : elems) {
         stmt.setString(1, elem.get("Part2B"));

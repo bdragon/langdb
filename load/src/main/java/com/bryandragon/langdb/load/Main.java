@@ -16,8 +16,9 @@ public class Main {
     props.setProperty("password", System.getenv("PGPASSWORD"));
     props.setProperty("sslmode", "disable");
 
-    String url = String.format("jdbc:postgresql://%s:5432/%s",
-        System.getenv("PGHOST"), System.getenv("PGDATABASE"));
+    String url =
+        String.format(
+            "jdbc:postgresql://%s:5432/%s", System.getenv("PGHOST"), System.getenv("PGDATABASE"));
 
     Path dataDir = Path.of(System.getProperty("dataDir"));
 
@@ -34,29 +35,22 @@ public class Main {
         Iso639_3.load(dataDir.resolve("json/iso-639-3.json").toFile(), conn);
 
         Iso639_3.Macrolanguage.load(
-            dataDir.resolve("json/iso-639-3-macrolanguages.json").toFile(),
-            conn);
+            dataDir.resolve("json/iso-639-3-macrolanguages.json").toFile(), conn);
 
-        Iso639_3.NameIndex.load(
-            dataDir.resolve("json/iso-639-3-name-index.json").toFile(), conn);
+        Iso639_3.NameIndex.load(dataDir.resolve("json/iso-639-3-name-index.json").toFile(), conn);
 
         Iso639_3.Deprecation.load(
-            dataDir.resolve("json/iso-639-3-retirements.json").toFile(),
-            conn);
+            dataDir.resolve("json/iso-639-3-retirements.json").toFile(), conn);
 
         Iso639_2.load(dataDir.resolve("json/iso-639-2.json").toFile(), conn);
 
         IanaLanguageSubtagRegistry.load(
-            dataDir.resolve("json/language-subtag-registry.json").toFile(),
-            conn);
+            dataDir.resolve("json/language-subtag-registry.json").toFile(), conn);
 
         IanaLanguageTagExtensionsRegistry.load(
-            dataDir.resolve("json/language-tag-extensions-registry.json").toFile(),
-            conn);
+            dataDir.resolve("json/language-tag-extensions-registry.json").toFile(), conn);
 
-        CldrBcp47Extensions.load(
-            dataDir.resolve("json/cldr-bcp47-extensions.json").toFile(),
-            conn);
+        CldrBcp47Extensions.load(dataDir.resolve("json/cldr-bcp47-extensions.json").toFile(), conn);
 
         System.exit(0);
       }

@@ -8,10 +8,7 @@ import java.io.Reader;
 import java.io.Writer;
 
 public final class Iso639_5 {
-  /**
-   * Columns:
-   *   URI, code, Label (English), Label (French)
-   */
+  /** Columns: URI, code, Label (English), Label (French) */
   public static void toJson(Reader in, Writer out) throws IOException {
     (new JsonWriter()).writeArray(CsvReader.tsv(in).iterator(), out);
   }

@@ -13,15 +13,14 @@ import java.util.Map;
 
 public class Iso3166_1 {
   public static void load(File source, Connection conn) throws IOException, SQLException {
-    PreparedStatement stmt = conn.prepareStatement(
-        "INSERT INTO iso_3166_1 (alpha2, alpha3, name) VALUES (?, ?, ?);"
-    );
+    PreparedStatement stmt =
+        conn.prepareStatement("INSERT INTO iso_3166_1 (alpha2, alpha3, name) VALUES (?, ?, ?);");
 
     ObjectMapper objectMapper = new ObjectMapper();
     List<Map<String, String>> elems = objectMapper.readValue(source, new TypeReference<>() {});
 
     try {
-      System.out.println("Loading ISO 3166-1...");
+      System.out.println("Loading ISO 3166-1 ...");
 
       for (Map<String, String> elem : elems) {
         System.out.println(elem.get("Alpha-2 code"));
