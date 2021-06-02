@@ -4,13 +4,14 @@ LOGNAME := $(shell logname)
 UID := $(shell id -u ${LOGNAME})
 GID := $(shell id -g ${LOGNAME})
 
-all: download extract transform
+all: download extract transform load
 .PHONY: all
 
 clean:
 	docker rmi $(DOCKER_REPO)/langdb-download &>/dev/null || true
 	docker rmi $(DOCKER_REPO)/langdb-extract &>/dev/null || true
 	docker rmi $(DOCKER_REPO)/langdb-transform &>/dev/null || true
+	docker rmi $(DOCKER_REPO)/langdb-load &>/dev/null || true
 	rm -rf $(TOP_DIR)/data/*
 .PHONY: clean
 
@@ -86,3 +87,65 @@ transform: build-transform
 		--volume=$(TOP_DIR)/data:/mnt/data \
 		$(DOCKER_REPO)/langdb-transform
 .PHONY: transform
+
+# Builds the langdb-load Docker image.
+build-load:
+	docker build \
+		--rm \
+		-f $(TOP_DIR)/build/Dockerfile-load \
+		-t $(DOCKER_REPO)/langdb-load \
+		$(TOP_DIR)
+.PHONY: build-load
+
+# Seeds the database and dumps it to data/sql/langdb.sql. It works as follows:
+#
+# 1. Starts a temporary postgres container with load/migrations/ and
+#    data/ mounted as volumes. The database schema is created automatically
+#    when the container starts.
+# 2. Starts the langdb-load container (with data/ mounted as a volume),
+#    which connects to the the temporary postgres container and populates
+#    the database.
+# 3. Invokes pg_dump in the running temporary postgres container to dump
+#    the fully-seeded database as a SQL file in the mounted data/ volume.
+load: build-load
+	set -eu ;\
+	docker network create langdb-load &>/dev/null || true ;\
+	POSTGRES_CID=$$( \
+		docker run \
+			--rm \
+			-dt \
+			--network=langdb-load \
+			--hostname=postgres \
+			--volume=$(TOP_DIR)/data:/mnt/data \
+			--volume=$(TOP_DIR)/load/migrations:/docker-entrypoint-initdb.d \
+			-e POSTGRES_DB=langdb \
+			-e POSTGRES_USER=langdb \
+			-e POSTGRES_PASSWORD=langdb \
+			postgres:13 \
+	) ;\
+	sleep 10 ;\
+	docker run \
+		--rm \
+		-it \
+		--network=langdb-load \
+		--volume=$(TOP_DIR)/data:/mnt/data \
+		-e PGHOST=postgres \
+		-e PGDATABASE=langdb \
+		-e PGUSER=langdb \
+		-e PGPASSWORD=langdb \
+		$(DOCKER_REPO)/langdb-load ;\
+	docker exec -it --user=$(UID):$(GID) $$POSTGRES_CID \
+		pg_dump \
+			--verbose \
+			--clean \
+			--no-comments \
+			--if-exists \
+			--column-inserts \
+			--file=/mnt/data/sql/langdb.sql \
+			--encoding=utf8 \
+			--username=langdb \
+			langdb ;\
+	docker kill -s SIGTERM $$POSTGRES_CID ;\
+	sleep 3 ;\
+	docker network rm langdb-load # &>/dev/null || true
+.PHONY: load
