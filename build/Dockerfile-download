@@ -5,7 +5,7 @@ VOLUME /mnt/data
 WORKDIR /app
 
 RUN apk update && \
-    apk add --no-cache bash curl && \
+    apk add --no-cache bash curl unzip && \
     rm -rf /var/cache/apk/*
 
 COPY ./build/scripts/download.sh /app/

@@ -40,4 +40,12 @@ download https://www.iana.org/assignments/language-subtag-registry/language-subt
 # IANA Language Tags Extension Registry
 download https://www.iana.org/assignments/language-tag-extensions-registry/language-tag-extensions-registry
 
+# Unicode CLDR
+download http://www.unicode.org/Public/cldr/latest/core.zip
+echo "Extracting <core.zip>/common/bcp47/* <core.zip>/common/dtd/ldmlBCP47.dtd"
+mkdir -p cldr
+rm -rf cldr/*
+unzip -q core.zip "common/bcp47/*" "common/dtd/ldmlBCP47.dtd" -d cldr
+rm core.zip
+
 echo "Done."

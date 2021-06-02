@@ -25,6 +25,8 @@ build-download:
 
 # Downloads sources.
 #
+#   * data/raw/cldr/common/bcp47/*.xml
+#   * data/raw/cldr/common/dtd/ldmlBCP47.dtd
 #   * data/raw/iso15924.txt
 #   * data/raw/ISO-639-2_utf-8.txt
 #   * data/raw/iso-639-3-macrolanguages.tab
