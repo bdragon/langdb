@@ -33,6 +33,9 @@ It is primarily written in Java and organized as a multi-module Maven
 project. The workflow to rebuild the database is Docker-based, so you don't
 need a Java environment unless you want to hack on it.
 
+For a detailed overview of BCP 47 Language Tags,
+see my blog post: https://bryandragon.com/writing/naming-languages
+
 ## Data
 
 The `data/` directory is used for reading and writing data as the database is
