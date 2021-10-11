@@ -1,4 +1,4 @@
-FROM maven:3-openjdk-11 AS build
+FROM maven:3.8-openjdk-17 AS build
 
 WORKDIR /usr/src/langdb
 
@@ -8,7 +8,7 @@ RUN mvn -pl :langdb-transform -am -DskipTests clean package
 
 # ============================================================================
 
-FROM openjdk:11-jre
+FROM openjdk:17-jdk-bullseye
 
 VOLUME /mnt/data
 

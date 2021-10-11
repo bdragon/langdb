@@ -411,7 +411,7 @@ the dump directly from `data/sql/` and do something else with it.
 
 ## Development
 
-Java source code is formatted with
+Requires JDK 17. Java source code is formatted with
 [google-java-format](https://github.com/google/google-java-format)
 and checked with [error\_prone](https://errorprone.info/)
 and [Checkstyle](https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html).

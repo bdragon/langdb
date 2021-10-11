@@ -1,4 +1,4 @@
-FROM maven:3-openjdk-11 AS build
+FROM maven:3.8-openjdk-17 AS build
 
 WORKDIR /usr/src/langdb
 
@@ -8,21 +8,21 @@ RUN mvn -pl :langdb-load -am -DskipTests clean package
 
 # ============================================================================
 
-FROM openjdk:11-jre AS seed
+FROM openjdk:17-jdk-bullseye AS seed
 
 VOLUME /mnt/data
 
 WORKDIR /app
 
 RUN set -eu ;\
-    apt-get update ;\
-    apt-get -y install gnupg2 lsb-release ;\
+    apt update ;\
+    apt -y install gnupg2 lsb-release ;\
     wget -q -O- https://www.postgresql.org/media/keys/ACCC4CF8.asc \
         | apt-key add - ;\
     echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" \
         | tee  /etc/apt/sources.list.d/pgdg.list ;\
-    apt-get update ;\
-    apt-get install -y postgresql-client-13 ;\
+    apt update ;\
+    apt install -y postgresql-client-13 ;\
     rm -rf /var/lib/apt/lists/* ;\
     psql --version
 
