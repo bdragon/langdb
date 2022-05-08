@@ -14,6 +14,9 @@ public final class Main {
     Path dataDir = Path.of(System.getProperty("dataDir"));
 
     try {
+      File jsonDir = dataDir.resolve("json").toFile();
+      jsonDir.mkdirs();
+
       Iso639_2.toJson(
           utf8Reader(dataDir.resolve("raw/ISO-639-2_utf-8.txt")),
           utf8Writer(dataDir.resolve("json/iso-639-2.json")));
