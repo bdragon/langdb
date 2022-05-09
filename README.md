@@ -34,7 +34,7 @@ project. The workflow to rebuild the database is Docker-based, so you don't
 need a Java environment unless you want to hack on it.
 
 For a detailed overview of BCP 47 Language Tags,
-see my blog post: https://bryandragon.com/writing/naming-languages
+see my blog post: https://bryandragon.com/blog/naming-languages
 
 ## Data
 
