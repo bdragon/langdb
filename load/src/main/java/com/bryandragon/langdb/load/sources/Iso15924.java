@@ -64,7 +64,6 @@ public final class Iso15924 {
           insert.setBoolean(6, reserved);
           insert.execute();
 
-          insert.clearParameters();
           num++;
         }
       }
