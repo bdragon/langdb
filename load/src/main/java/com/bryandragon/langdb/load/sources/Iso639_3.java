@@ -44,7 +44,16 @@ public final class Iso639_3 {
     try {
       for (Map<String, String> elem : elems) {
         insert.setString(1, elem.get("Id"));
-        insert.setString(2, nonEmptyText(elem.get("Part2T")));
+
+        // Special handling for zcd due to acknowledged mistake in the downloaded
+        // ISO 639-3 data table (it suggests a code for zcd exists in ISO 639-2).
+        // TODO: remove this once the issue has been fixed
+        if (elem.get("Id").equals("zcd")) {
+          insert.setString(2, null);
+        } else {
+          insert.setString(2, nonEmptyText(elem.get("Part2T")));
+        }
+
         insert.setString(3, nonEmptyText(elem.get("Part1")));
         insert.setString(4, SCOPE.get(elem.get("Scope")));
         insert.setString(5, TYPE.get(elem.get("Language_Type")));
