@@ -110,6 +110,7 @@ load: build-load
 		-e PGUSER=langdb \
 		-e PGPASSWORD=langdb \
 		$(DOCKER_REPO)/langdb-load ;\
+	mkdir -p $(TOP_DIR)/data/sql ;\
 	docker exec -it --user=$(UID):$(GID) $$POSTGRES_CID \
 		pg_dump \
 			--verbose \
