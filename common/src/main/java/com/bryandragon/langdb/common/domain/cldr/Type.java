@@ -27,6 +27,9 @@ public class Type implements Serializable {
   @JacksonXmlProperty(localName = "since", isAttribute = true)
   private String since;
 
+  @JacksonXmlProperty(localName = "iana", isAttribute = true)
+  private String iana;
+
   public Type() {}
 
   public String getName() {
@@ -75,5 +78,13 @@ public class Type implements Serializable {
 
   public void setSince(String since) {
     this.since = since;
+  }
+
+  public String getIana() {
+    return iana;
+  }
+
+  public void setIana(String iana) {
+    this.iana = iana;
   }
 }
