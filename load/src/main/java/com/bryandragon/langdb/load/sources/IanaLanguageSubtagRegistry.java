@@ -82,7 +82,16 @@ public final class IanaLanguageSubtagRegistry {
           insertSubtag.setString(7, nonEmptyText((String) elem.get("Suppress-Script")));
           insertSubtag.setString(8, nonEmptyText((String) elem.get("Macrolanguage")));
           insertSubtag.setString(9, scope);
-          insertSubtag.setString(10, nonEmptyText((String) elem.get("Comments")));
+
+          // Comments may be a string or a list of strings.
+          String comments;
+          if (elem.get("Comments") instanceof List) {
+            comments = String.join("; ", castList(String.class, (List<?>) elem.get("Comments")));
+          } else {
+            comments = (String) elem.get("Comments");
+          }
+          insertSubtag.setString(10, nonEmptyText(comments));
+
           insertSubtag.execute();
           insertSubtag.clearParameters();
         }
