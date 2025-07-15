@@ -1,16 +1,27 @@
-FROM maven:3.8-openjdk-17 AS build
+FROM eclipse-temurin:24-jdk-alpine AS build
+
+ENV MAVEN_HOME=/usr/share/maven
+
+COPY --from=maven:3.9-eclipse-temurin-24-alpine ${MAVEN_HOME} ${MAVEN_HOME}
+
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn
 
 WORKDIR /usr/src/langdb
 
 COPY . /usr/src/langdb
 
-RUN mvn -pl :langdb-transform -am -DskipTests clean package
+RUN /usr/bin/mvn -pl :langdb-transform -am -DskipTests clean package
 
 # ============================================================================
 
-FROM openjdk:17-jdk-bullseye
+FROM eclipse-temurin:24-jdk-alpine
 
 VOLUME /mnt/data
+
+RUN set -eux; \
+    apk update; \
+    apk add --no-cache bash; \
+    rm -rf /var/cache/apk/*
 
 WORKDIR /app
 

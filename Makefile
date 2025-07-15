@@ -97,7 +97,7 @@ load: build-load
 			-e POSTGRES_DB=langdb \
 			-e POSTGRES_USER=langdb \
 			-e POSTGRES_PASSWORD=langdb \
-			postgres:13 \
+			postgres:17-alpine \
 	) ;\
 	sleep 10 ;\
 	docker run \

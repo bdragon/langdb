@@ -10,16 +10,17 @@
     <packaging>pom</packaging>
 
     <properties>
-        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>24</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
-        <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
-        <error-prone.version>2.9.0</error-prone.version>
-        <jackson.version>2.14.0</jackson.version>
-        <postgresql.version>42.5.1</postgresql.version>
-        <junit.version>5.9.2</junit.version>
+        <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+        <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
+        <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
+        <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
+        <error-prone.version>2.40.0</error-prone.version>
+        <jackson.version>2.19.1</jackson.version>
+        <postgresql.version>42.7.7</postgresql.version>
+        <junit.version>5.13.3</junit.version>
 
         <checkstyle.config.location>google_checks.xml</checkstyle.config.location>
     </properties>
@@ -42,6 +43,7 @@
                         <fork>true</fork>
                         <compilerArgs>
                             <arg>-XDcompilePolicy=simple</arg>
+                            <arg>--should-stop=ifError=FLOW</arg>
                             <arg>-Xplugin:ErrorProne</arg>
                             <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED</arg>
                             <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</arg>

@@ -54,12 +54,13 @@ and connects to it with a psql shell in a separate postgres container.
 docker network create langdb
 
 # Start the database server in the background.
-docker run -dit --network=langdb -h langdb bryandragon/langdb
+docker run -dit --network=langdb -h langdb \
+  -e POSTGRES_PASSWORD=langdb bryandragon/langdb
 
 # Wait a minute and start a postgresql client session in the foreground.
 docker run -it --network=langdb -e PGPASSWORD=langdb \
-  postgres:13-alpine psql -h langdb -U langdb
-psql (13.2)
+  postgres:17-alpine psql -h langdb -U langdb
+psql (17.5)
 Type "help" for help.
 
 langdb=# select k.ext_id, k.id, count(*) as qty from subtag_ext_key as k
@@ -67,11 +68,11 @@ join subtag_ext_key_type as t on k.ext_id = t.ext_id and k.id = t.key_id
 group by k.ext_id, k.id order by qty desc, k.ext_id, k.id limit 5;
  ext_id | id | qty
 --------+----+-----
- u      | tz | 466
- u      | cu | 303
- u      | nu |  88
+ u      | tz | 468
+ u      | cu | 307
+ u      | nu |  99
+ t      | m0 |  32
  t      | k0 |  29
- t      | d0 |  22
 (5 rows)
 ```
 
@@ -403,7 +404,7 @@ Once all data has been inserted, the database is dumped to `data/sql/`.
 </table>
 
 Builds and tags the final Docker image, which is based on
-[postgres:13-alpine](https://hub.docker.com/_/postgres).
+[postgres:17-alpine](https://hub.docker.com/_/postgres).
 
 The Docker image contains the dump of the fully-loaded database, which is used
 to seed the database when the container starts up. Of course, you can also grab
@@ -411,7 +412,7 @@ the dump directly from `data/sql/` and do something else with it.
 
 ## Development
 
-Requires JDK 17. Java source code is formatted with
+Requires JDK 24. Java source code is formatted with
 [google-java-format](https://github.com/google/google-java-format)
 and checked with [error\_prone](https://errorprone.info/)
 and [Checkstyle](https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html).
