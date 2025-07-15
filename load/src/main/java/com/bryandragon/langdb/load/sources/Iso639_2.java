@@ -30,7 +30,7 @@ public final class Iso639_2 {
       for (Map<String, String> elem : elems) {
         String part2B = elem.get("Part2B");
         String part2T = elem.get("Part2T");
-        String part1 = nonEmptyText(elem.get("Part1"));
+        String part1 = elem.get("Part1");
         String name = elem.get("English_Name");
         boolean reserved = false;
 
@@ -53,8 +53,8 @@ public final class Iso639_2 {
         for (int i = 0; i < ts.size(); i++) {
           insert.setString(1, ts.get(i));
           insert.setString(2, bs.get(i));
-          insert.setString(3, nonEmptyText(elem.get("Part1")));
-          insert.setString(4, elem.get("English_Name"));
+          insert.setString(3, nonEmptyText(part1));
+          insert.setString(4, name);
           insert.setBoolean(5, reserved);
           insert.execute();
         }
