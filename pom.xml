@@ -17,7 +17,7 @@
         <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
         <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
-        <error-prone.version>2.40.0</error-prone.version>
+        <error-prone.version>2.41.0</error-prone.version>
         <jackson.version>2.19.2</jackson.version>
         <postgresql.version>42.7.7</postgresql.version>
         <junit.version>5.13.4</junit.version>
