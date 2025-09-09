@@ -5,7 +5,7 @@
 -- Dumped from database version 17.5
 -- Dumped by pg_dump version 17.5
 
--- Started on 2025-07-15 21:42:34 UTC
+-- Started on 2025-09-09 22:30:07 UTC
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -3016,7 +3016,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('clj', NULL, NULL, 'individual', 'living', 'Laitu Chin', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('clk', NULL, NULL, 'individual', 'living', 'Idu-Mishmi', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('cll', NULL, NULL, 'individual', 'living', 'Chala', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('clm', NULL, NULL, 'individual', 'living', 'Clallam', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('clm', NULL, NULL, 'individual', 'living', 'Klallam', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('clo', NULL, NULL, 'individual', 'living', 'Lowland Oaxaca Chontal', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('cls', NULL, NULL, 'individual', 'historical', 'Classical Sanskrit', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('clt', NULL, NULL, 'individual', 'living', 'Lautu Chin', NULL);
@@ -3309,7 +3309,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('dir', NULL, NULL, 'individual', 'living', 'Dirim', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('dis', NULL, NULL, 'individual', 'living', 'Dimasa', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('diu', NULL, NULL, 'individual', 'living', 'Diriku', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('div', NULL, 'dv', 'individual', 'living', 'Dhivehi', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('div', NULL, 'dv', 'individual', 'living', 'Divehi', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('diw', NULL, NULL, 'individual', 'living', 'Northwestern Dinka', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('dix', NULL, NULL, 'individual', 'living', 'Dixon Reef', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('diy', NULL, NULL, 'individual', 'living', 'Diuwe', NULL);
@@ -4044,7 +4044,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('gza', NULL, NULL, 'individual', 'living', 'Ganza', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('gzi', NULL, NULL, 'individual', 'living', 'Gazi', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('gzn', NULL, NULL, 'individual', 'living', 'Gane', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('haa', NULL, NULL, 'individual', 'living', 'Han', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('haa', NULL, NULL, 'individual', 'living', 'Hän', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('hab', NULL, NULL, 'individual', 'living', 'Hanoi Sign Language', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('hac', NULL, NULL, 'individual', 'living', 'Gurani', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('had', NULL, NULL, 'individual', 'living', 'Hatam', NULL);
@@ -5110,7 +5110,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwh', NULL, NULL, 'individual', 'living', 'Kowiai', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwi', NULL, NULL, 'individual', 'living', 'Awa-Cuaiquer', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwj', NULL, NULL, 'individual', 'living', 'Kwanga', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwk', NULL, NULL, 'individual', 'living', 'Kwakiutl', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwk', NULL, NULL, 'individual', 'living', 'Kwak''wala', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwl', NULL, NULL, 'individual', 'living', 'Kofyar', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwm', NULL, NULL, 'individual', 'living', 'Kwambi', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('kwn', NULL, NULL, 'individual', 'living', 'Kwangali', NULL);
@@ -5514,7 +5514,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('luq', NULL, NULL, 'individual', 'living', 'Lucumi', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('lur', NULL, NULL, 'individual', 'living', 'Laura', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('lus', NULL, NULL, 'individual', 'living', 'Lushai', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('lut', NULL, NULL, 'individual', 'living', 'Lushootseed', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('lut', NULL, NULL, 'individual', 'extinct', 'Lushootseed', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('luu', NULL, NULL, 'individual', 'living', 'Lumba-Yakkha', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('luv', NULL, NULL, 'individual', 'living', 'Luwati', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('luw', NULL, NULL, 'individual', 'living', 'Luo (Cameroon)', NULL);
@@ -5730,7 +5730,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mhk', NULL, NULL, 'individual', 'living', 'Mungaka', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mhl', NULL, NULL, 'individual', 'living', 'Mauwake', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mhm', NULL, NULL, 'individual', 'living', 'Makhuwa-Moniga', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mhn', NULL, NULL, 'individual', 'living', 'Mócheno', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mhn', NULL, NULL, 'individual', 'living', 'Mòcheno', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mho', NULL, NULL, 'individual', 'living', 'Mashi (Zambia)', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mhp', NULL, NULL, 'individual', 'living', 'Balinese Malay', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('mhq', NULL, NULL, 'individual', 'living', 'Mandan', NULL);
@@ -6635,7 +6635,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nxq', NULL, NULL, 'individual', 'living', 'Naxi', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nxr', NULL, NULL, 'individual', 'living', 'Ninggerum', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nxx', NULL, NULL, 'individual', 'living', 'Nafri', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nya', NULL, 'ny', 'individual', 'living', 'Nyanja', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nya', NULL, 'ny', 'individual', 'living', 'Chichewa', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nyb', NULL, NULL, 'individual', 'living', 'Nyangbo', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nyc', NULL, NULL, 'individual', 'living', 'Nyanga-li', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('nyd', NULL, NULL, 'individual', 'living', 'Nyore', NULL);
@@ -9553,7 +9553,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zmm', NULL, NULL, 'individual', 'living', 'Marimanindji', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zmn', NULL, NULL, 'individual', 'living', 'Mbangwe', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zmo', NULL, NULL, 'individual', 'living', 'Molo', NULL);
-INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zmp', NULL, NULL, 'individual', 'living', 'Mpuono', NULL);
+INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zmp', NULL, NULL, 'individual', 'living', 'Mbuun', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zmq', NULL, NULL, 'individual', 'living', 'Mituku', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zmr', NULL, NULL, 'individual', 'living', 'Maranunggu', NULL);
 INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VALUES ('zms', NULL, NULL, 'individual', 'living', 'Mbesa', NULL);
@@ -9649,7 +9649,7 @@ INSERT INTO public.iso_639_3 (id, part2t, part1, scope, type, name, comment) VAL
 -- Data for Name: iso_639_3_deprecation; Type: TABLE DATA; Schema: public; Owner: langdb
 --
 
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('fri', 'change', 'fry', '', '2007-02-01');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('fri', 'change', 'fry', '', '2005-11-16');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('auv', 'merge', 'oci', '', '2007-03-14');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('gsc', 'merge', 'oci', '', '2007-03-14');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('lms', 'merge', 'oci', '', '2007-03-14');
@@ -9668,7 +9668,6 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('mzf', 'split', '', 'Split into four languages: Ambrak [aag]; Yangum Dey [yde]; Yangum Gel [ygl]; Yangum Mon [ymo]', '2007-07-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nhj', 'merge', 'nhi', '', '2007-07-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nhs', 'split', '', 'Split into Sierra Negra Nahuatl [nsu] and Southeastern Puebla Nahuatl [npl]', '2007-07-18');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('occ', 'duplicate', 'ile', '', '2007-07-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('tmx', 'merge', 'ybi', '', '2007-07-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('tot', 'split', '', 'Split into Upper Necaxa Totonac [tku] and Tecpatlán Totonac [tcw]', '2007-07-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('xmi', 'nonexistent', '', '', '2007-07-18');
@@ -9677,6 +9676,7 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('atf', 'nonexistent', '', '', '2007-08-10');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('bqe', 'merge', 'eus', '', '2007-08-10');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('bsz', 'merge', 'eus', '', '2007-08-10');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('occ', 'duplicate', 'ile', '', '2007-12-07');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('aex', 'merge', 'eng', '', '2008-01-14');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ahe', 'merge', 'knx', '', '2008-01-14');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('aiz', 'split', '', 'Split into Aari [aiw] (new identifier) and Gayil [gyl]', '2008-01-14');
@@ -9819,21 +9819,21 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('drh', 'merge', 'khk', '', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('drw', 'merge', 'prs', '', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('gav', 'merge', 'dev', '', '2010-01-18');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('mof', 'split', '', 'split into Mohegan-Pequot [xpq] and Narragansett [xnt]', '2010-01-18');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('mof', 'split', '', 'Split into Mohegan-Pequot [xpq] and Narragansett [xnt]', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('mst', 'merge', 'mry', '', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('myt', 'merge', 'mry', '', '2010-01-18');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('rmr', 'split', '', 'split into Caló [rmq] and Erromintxela [emx]', '2010-01-18');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('sgl', 'split', '', 'split into Sanglechi [sgy] and Ishkashimi [isk]', '2010-01-18');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('rmr', 'split', '', 'Split into Caló [rmq] and Erromintxela [emx]', '2010-01-18');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('sgl', 'split', '', 'Split into Sanglechi [sgy] and Ishkashimi [isk]', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('sul', 'split', '', 'Split into Tandaganon [tgn] and Surigaonon [sgd] (new identifier)', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('sum', 'split', '', 'Split into Mayangna [yan] and Ulwa [ulw]', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('tnf', 'merge', 'prs', '', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('wgw', 'split', '', 'Split into Yaleba [ylb] and Wagawaga [wgb] (new identifier)', '2010-01-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ayx', 'duplicate', 'nun', '', '2011-05-18');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('bjq', 'split', '', 'split into Southern Betsimisaraka [bzc] and Tesaka Malagasy [tkg]', '2011-05-18');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('bjq', 'split', '', 'Split into Southern Betsimisaraka [bzc] and Tesaka Malagasy [tkg]', '2011-05-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('dha', 'nonexistent', '', '', '2011-05-18');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('dkl', 'split', '', 'split into Ampari Dogon [aqd] and Mombo Dogon [dmb]', '2011-05-18');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('dkl', 'split', '', 'Split into Ampari Dogon [aqd] and Mombo Dogon [dmb]', '2011-05-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('mja', 'nonexistent', '', '', '2011-05-18');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nbf', 'split', '', 'split into Naxi [nxq] and Narua [nru]', '2011-05-18');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nbf', 'split', '', 'Split into Naxi [nxq] and Narua [nru]', '2011-05-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('noo', 'split', '', 'Split into [dtd] Ditidaht and [nuk] Nuu-chah-nulth', '2011-05-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('tie', 'merge', 'ras', '', '2011-05-18');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('tkk', 'duplicate', 'twm', '', '2011-05-18');
@@ -9845,15 +9845,14 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('dwl', 'split', '', 'Split into Dogon, Bankan Tey (Walo) [dbw]  and Dogon, Ben Tey (Beni) [dbt]', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('elp', 'nonexistent', '', '', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('gbc', 'split', '', 'Split into Garrwa [wrk] and Wanyi [wny]', '2012-02-03');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('gio', 'split', '', 'Split into Qau [gqu] and A''ou [aou] with some going to Green Gelao [gig], some to Red Gelao [gir], and some to White Gelao [giw]', '2012-02-03');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('gio', 'split', '', 'Split into Qau [gqu] and A''ou [aou]', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('hrr', 'merge', 'jal', '', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ibi', 'merge', 'opa', '', '2012-02-03');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('jar', 'split', '', 'split into Gwak [jgk] and Bankal [jjr]', '2012-02-03');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('kdv', 'split', '', 'split into Kadu [zkd] and Kanan [zkn]', '2012-02-03');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('jar', 'split', '', 'Split into Gwak [jgk] and Bankal [jjr]', '2012-02-03');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('kdv', 'split', '', 'Split into Kadu [zkd] and Kanan [zkn]', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('kgh', 'merge', 'kml', '', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('kpp', 'split', '', 'Split into Paku Karen [jkp] and Mobwa Karen [jkm]', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('kzh', 'split', '', 'Split into Andaandi (Dongolawi) [dgl] and Kenzi (Mattoki) [xnz]', '2012-02-03');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('lcq', 'merge', 'ppr', '', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('mgx', 'split', '', 'Split into Barikewa [jbk] and Mouwase [jmw]', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nln', 'split', '', 'Split into Eastern Durango Nahuatl [azd] and Western Durango Nahuatl [azn]', '2012-02-03');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('pbz', 'nonexistent', '', '', '2012-02-03');
@@ -9898,7 +9897,6 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('bmy', 'nonexistent', '', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('bxx', 'nonexistent', '', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('byy', 'nonexistent', '', '', '2015-01-12');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('dzd', 'nonexistent', '', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('gfx', 'merge', 'vaj', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('gti', 'merge', 'nyc', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ime', 'nonexistent', '', '', '2015-01-12');
@@ -9915,7 +9913,6 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('thx', 'duplicate', 'oyb', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('tsf', 'merge', 'taj', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('uok', 'merge', 'ema', '', '2015-01-12');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('xsj', 'duplicate', 'suj', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('yds', 'nonexistent', '', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ymt', 'duplicate', 'mtm', '', '2015-01-12');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ynh', 'nonexistent', '', '', '2015-01-12');
@@ -9926,9 +9923,9 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('coy', 'merge', 'pij', '', '2016-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('cqu', 'merge', 'quh', '', '2016-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('cum', 'nonexistent', '', '', '2016-01-15');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('duj', 'split', '', 'split into [dwu] Dhuwal and [dwy] Dhuwaya', '2016-01-15');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('duj', 'split', '', 'Split into [dwu] Dhuwal and [dwy] Dhuwaya', '2016-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ggn', 'merge', 'gvr', '', '2016-01-15');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ggo', 'split', '', 'split into [esg] Aheri Gondi and [wsg] Adilabad Gondi', '2016-01-15');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ggo', 'split', '', 'Split into [esg] Aheri Gondi and [wsg] Adilabad Gondi', '2016-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('guv', 'merge', 'duz', '', '2016-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('iap', 'nonexistent', '', '', '2016-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ill', 'split', '', 'Split into Iranun (Philippines) [ilp] and Iranun (Malaysia) [ilm]', '2016-01-15');
@@ -9999,7 +9996,7 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('sdm', 'split', '', 'Split into Semandang [sdq], Beginci [ebc] and Gerai [gef]', '2020-01-23');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('tbb', 'nonexistent', '', '', '2020-01-23');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('xrq', 'merge', 'dmw', '', '2020-01-23');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('xtz', 'split', '', 'Split into [xpv] Northern Tasman,  [xph] North Midlands Tasman, [xpb] Northeastern Tasman, [xpd] Oyster Bay Tasmanian, [xpf] Southeast Tasma, [xpx] Southwestern Tasman, [xpw] Northwestern Tasman., [xpl] Port Sorell Tasman. and [xpz] Bruny Island Tasman.', '2020-01-23');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('xtz', 'split', '', 'Split into [xpv] Northern Tasman,  [xph] North Midlands Tasman, [xpb] Northeastern Tasman, [xpd] Oyster Bay Tasman, [xpf] Southeast Tasman, [xpx] Southwestern Tasman, [xpw] Northwestern Tasman, [xpl] Port Sorell Tasman, and [xpz] Bruny Island Tasman', '2020-01-23');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('zir', 'duplicate', 'scv', '', '2020-01-23');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('thw', 'merge', 'ola', '', '2020-03-19');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('bic', 'merge', 'bir', '', '2021-01-15');
@@ -10011,7 +10008,7 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('pat', 'merge', 'kxr', '', '2021-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('vki', 'split', '', 'Split into Koro Nulu [vkn] and Koro Zuba [vkz]', '2021-01-15');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('wra', 'split', '', 'Split into Bauni [bpe], Uni [uni] and Bouni [suo]', '2021-01-15');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ajt', 'duplicate', 'aeb', '', '2022-01-20');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ajt', 'merge', 'aeb', '', '2022-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('cug', 'split', '', 'Split into Chung [cnq] and Mbuk [bpc]', '2022-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('lak', 'merge', 'ksp', '', '2022-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('lno', 'split', '', 'Split into Lango [lgo], Imotong [imt], Logir [lqr] and Okolie [oie]', '2022-01-20');
@@ -10023,7 +10020,9 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('wya', 'split', '', 'Split into Wyandot [wyn] and Wendat [wdt]', '2022-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ajp', 'merge', 'apc', '', '2023-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('kgm', 'duplicate', 'plu', '', '2023-01-20');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ksa', 'split', '', 'Split into [rsw] Rishiwa and [izm] Kizamani', '2023-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nom', 'merge', 'cbr', '', '2023-01-20');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('plj', 'split', '', 'Split into Pesse [pze], Nyamzak-Dir-Mbarimi [nzr], Zul [zlu], and Buli [uly]', '2023-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('pmk', 'merge', 'crr', '', '2023-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('prp', 'merge', 'guj', '', '2023-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('slq', 'nonexistent', '', '', '2023-01-20');
@@ -10033,10 +10032,8 @@ INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effecti
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('xss', 'merge', 'zko', '', '2023-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('zkb', 'duplicate', 'kjh', '', '2023-01-20');
 INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('zua', 'split', '', 'Split into [tvi] Tulai, [dyr] Dyarim, [dsk] Dokshi, [cxh] Cha''ari, and [zem] Zeem', '2023-01-20');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('ksa', 'split', '', 'Split into [rsw] Rishiwa and [izm] Kizamani', '2023-01-23');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('plj', 'split', '', 'Split into Pesse [pze], Nyamzak-Dir-Mbarimi [nzr], Zul [zlu], and Buli [uly]', '2023-01-23');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('dek', 'duplicate', 'sqm', '', '2024-09-09');
-INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nte', 'merge', 'eko', '', '2024-09-09');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('dek', 'duplicate', 'sqm', '', '2024-10-15');
+INSERT INTO public.iso_639_3_deprecation (id, reason, change_to, remedy, effective_on) VALUES ('nte', 'merge', 'eko', '', '2024-10-15');
 
 
 --
@@ -10904,6 +10901,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ary', 'Moroccan
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('arz', 'Egyptian Arabic', 'Arabic, Egyptian');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('asa', 'Asu (Tanzania)', 'Asu (Tanzania)');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('asb', 'Assiniboine', 'Assiniboine');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('asb', 'Nakoda Assiniboine', 'Nakoda Assiniboine');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('asc', 'Casuarina Coast Asmat', 'Asmat, Casuarina Coast');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ase', 'American Sign Language', 'American Sign Language');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('asf', 'Auslan', 'Auslan');
@@ -10939,6 +10937,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ate', 'Atemble'
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('atg', 'Ivbie North-Okpela-Arhe', 'Ivbie North-Okpela-Arhe');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ati', 'Attié', 'Attié');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('atj', 'Atikamekw', 'Atikamekw');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('atj', 'Nehirowimowin', 'Nehirowimowin');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('atk', 'Ati', 'Ati');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('atl', 'Mt. Iraya Agta', 'Agta, Mt. Iraya');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('atm', 'Ata', 'Ata');
@@ -11866,6 +11865,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('cky', 'Cakfem-M
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ckz', 'Cakchiquel-Quiché Mixed Language', 'Cakchiquel-Quiché Mixed Language');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('cla', 'Ron', 'Ron');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clc', 'Chilcotin', 'Chilcotin');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clc', 'Tsilhqot’in', 'Tsilhqot’in');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('cld', 'Chaldean Neo-Aramaic', 'Neo-Aramaic, Chaldean');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('cle', 'Lealao Chinantec', 'Chinantec, Lealao');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clh', 'Chilisso', 'Chilisso');
@@ -11874,6 +11874,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clj', 'Laitu Ch
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clk', 'Idu-Mishmi', 'Idu-Mishmi');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('cll', 'Chala', 'Chala');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clm', 'Clallam', 'Clallam');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clm', 'Klallam', 'Klallam');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clo', 'Lowland Oaxaca Chontal', 'Chontal, Lowland Oaxaca');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('cls', 'Classical Sanskrit', 'Classical Sanskrit');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('clt', 'Lautu Chin', 'Chin, Lautu');
@@ -12958,7 +12959,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('gyz', 'Gyaazi',
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('gza', 'Ganza', 'Ganza');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('gzi', 'Gazi', 'Gazi');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('gzn', 'Gane', 'Gane');
-INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('haa', 'Han', 'Han');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('haa', 'Hän', 'Hän');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('hab', 'Hanoi Sign Language', 'Hanoi Sign Language');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('hac', 'Gurani', 'Gurani');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('had', 'Hatam', 'Hatam');
@@ -14092,6 +14093,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwh', 'Kowiai',
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwi', 'Awa-Cuaiquer', 'Awa-Cuaiquer');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwj', 'Kwanga', 'Kwanga');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwk', 'Kwakiutl', 'Kwakiutl');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwk', 'Kwak''wala', 'Kwak''wala');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwl', 'Kofyar', 'Kofyar');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwm', 'Kwambi', 'Kwambi');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('kwn', 'Kwangali', 'Kwangali');
@@ -14651,6 +14653,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mdr', 'Mandar',
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mds', 'Maria (Papua New Guinea)', 'Maria (Papua New Guinea)');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mdt', 'Mbere', 'Mbere');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mdu', 'Mboko', 'Mboko');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpl', 'Middle Watut', 'Watut, Middle');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mdv', 'Santa Lucía Monteverde Mixtec', 'Mixtec, Santa Lucía Monteverde');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mdw', 'Mbosi', 'Mbosi');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mdx', 'Dizin', 'Dizin');
@@ -14744,7 +14747,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhj', 'Mogholi'
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhk', 'Mungaka', 'Mungaka');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhl', 'Mauwake', 'Mauwake');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhm', 'Makhuwa-Moniga', 'Makhuwa-Moniga');
-INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhn', 'Mócheno', 'Mócheno');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhn', 'Mòcheno', 'Mòcheno');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mho', 'Mashi (Zambia)', 'Mashi (Zambia)');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhp', 'Balinese Malay', 'Malay, Balinese');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mhq', 'Mandan', 'Mandan');
@@ -14949,7 +14952,6 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpi', 'Mpade', 
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpj', 'Martu Wangka', 'Martu Wangka');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpj', 'Wangkajunga', 'Wangkajunga');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpk', 'Mbara (Chad)', 'Mbara (Chad)');
-INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpl', 'Middle Watut', 'Watut, Middle');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpm', 'Yosondúa Mixtec', 'Mixtec, Yosondúa');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpn', 'Mindiri', 'Mindiri');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('mpo', 'Miu', 'Miu');
@@ -15676,6 +15678,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('nww', 'Ndwewe',
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('nwx', 'Middle Newar', 'Newar, Middle');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('nwy', 'Nottoway-Meherrin', 'Nottoway-Meherrin');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('nxa', 'Nauete', 'Nauete');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ona', 'Ona', 'Ona');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('nxd', 'Ngando (Democratic Republic of Congo)', 'Ngando (Democratic Republic of Congo)');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('nxe', 'Nage', 'Nage');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('nxg', 'Ngad''a', 'Ngad''a');
@@ -15820,7 +15823,6 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('omu', 'Omurano'
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('omw', 'South Tairora', 'Tairora, South');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('omx', 'Old Mon', 'Mon, Old');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('omy', 'Old Malay', 'Malay, Old');
-INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ona', 'Ona', 'Ona');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('onb', 'Lingao', 'Lingao');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('one', 'Oneida', 'Oneida');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ong', 'Olo', 'Olo');
@@ -16268,7 +16270,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('pyx', 'Pyu (Mya
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('pyy', 'Pyen', 'Pyen');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('pze', 'Pesse', 'Pesse');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('pzh', 'Pazeh', 'Pazeh');
-INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('pzn', 'Jejara Naga', 'Jejara Naga');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('pzn', 'Jejara Naga', 'Naga, Jejara');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('pzn', 'Para Naga', 'Naga, Para');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('qua', 'Quapaw', 'Quapaw');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('qub', 'Huallaga Huánuco Quechua', 'Quechua, Huallaga Huánuco');
@@ -16596,6 +16598,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sdz', 'Sallands
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sea', 'Semai', 'Semai');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('seb', 'Shempire Senoufo', 'Senoufo, Shempire');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sec', 'Sechelt', 'Sechelt');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sec', 'She shashishalhem', 'She shashishalhem');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sed', 'Sedang', 'Sedang');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('see', 'Seneca', 'Seneca');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sef', 'Cebaara Senoufo', 'Senoufo, Cebaara');
@@ -16660,6 +16663,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sho', 'Shanga',
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('shp', 'Shipibo-Conibo', 'Shipibo-Conibo');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('shq', 'Sala', 'Sala');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('shr', 'Shi', 'Shi');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('shs', 'Secwepemctsín', 'Secwepemctsín');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('shs', 'Shuswap', 'Shuswap');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sht', 'Shasta', 'Shasta');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('shu', 'Chadian Arabic', 'Arabic, Chadian');
@@ -16865,6 +16869,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sqq', 'Sou', 'S
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sqr', 'Siculo Arabic', 'Arabic, Siculo');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sqs', 'Sri Lankan Sign Language', 'Sri Lankan Sign Language');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sqt', 'Soqotri', 'Soqotri');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('squ', 'Sḵwx̱wú7mesh sníchim', 'Sḵwx̱wú7mesh sníchim');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('squ', 'Squamish', 'Squamish');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sqx', 'Kufr Qassem Sign Language (KQSL)', 'Kufr Qassem Sign Language (KQSL)');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('sra', 'Saruga', 'Saruga');
@@ -16969,7 +16974,6 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('svk', 'Slovakia
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('svm', 'Slavomolisano', 'Slavomolisano');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('svs', 'Savosavo', 'Savosavo');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('svx', 'Skalvian', 'Skalvian');
-INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdg', 'Western Tamang', 'Tamang, Western');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('swa', 'Swahili (macrolanguage)', 'Swahili (macrolanguage)');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('swb', 'Maore Comorian', 'Comorian, Maore');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('swc', 'Congo Swahili', 'Swahili, Congo');
@@ -17117,6 +17121,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdc', 'Emberá-
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdd', 'Tai Nüa', 'Tai Nüa');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tde', 'Tiranige Diga Dogon', 'Dogon, Tiranige Diga');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdf', 'Talieng', 'Talieng');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdg', 'Western Tamang', 'Tamang, Western');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdh', 'Thulung', 'Thulung');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdi', 'Tomadino', 'Tomadino');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tdj', 'Tajio', 'Tajio');
@@ -17198,11 +17203,14 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thk', 'Tharaka'
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thl', 'Dangaura Tharu', 'Tharu, Dangaura');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thm', 'Aheu', 'Aheu');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thn', 'Thachanadan', 'Thachanadan');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thp', 'Nłeʔkepmxcín', 'Nłeʔkepmxcín');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thp', 'Thompson', 'Thompson');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thp', 'Thompson River Salish', 'Salish, Thompson River');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thq', 'Kochila Tharu', 'Tharu, Kochila');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thr', 'Rana Tharu', 'Tharu, Rana');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('ths', 'Thakali', 'Thakali');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tht', 'Tahltan', 'Tahltan');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('tht', 'Tāłtān', 'Tāłtān');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thu', 'Thuri', 'Thuri');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thv', 'Tahaggart Tamahaq', 'Tamahaq, Tahaggart');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('thy', 'Tha', 'Tha');
@@ -18731,7 +18739,7 @@ INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmm', 'Marimani
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmm', 'Marramaninyshi', 'Marramaninyshi');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmn', 'Mbangwe', 'Mbangwe');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmo', 'Molo', 'Molo');
-INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmp', 'Mpuono', 'Mpuono');
+INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmp', 'Mbuun', 'Mbuun');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmq', 'Mituku', 'Mituku');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zmr', 'Maranunggu', 'Maranunggu');
 INSERT INTO public.iso_639_3_name (id, print, inverted) VALUES ('zms', 'Mbesa', 'Mbesa');
@@ -19547,7 +19555,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'ary', 'Moroccan Arabic', '2009-07-29', NULL, NULL, NULL, 'ar', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'arz', 'Egyptian Arabic', '2009-07-29', NULL, NULL, NULL, 'ar', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'asa', 'Asu (Tanzania)', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'asb', 'Assiniboine', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'asb', 'Assiniboine; Nakoda Assiniboine', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'asc', 'Casuarina Coast Asmat', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'asd', 'Asas', '2009-07-29', '2019-04-16', 'snz', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'ase', 'American Sign Language', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -19579,7 +19587,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'atg', 'Ivbie North-Okpela-Arhe', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'ath', 'Athapascan languages', '2005-10-16', NULL, NULL, NULL, NULL, 'collection', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'ati', 'Attié', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'atj', 'Atikamekw', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'atj', 'Atikamekw; Nehirowimowin', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'atk', 'Ati', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'atl', 'Mt. Iraya Agta', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'atm', 'Ata', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -20301,7 +20309,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'byk', 'Biao', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'byl', 'Bayono', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'bym', 'Bidjara', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Avst', 'Avestan', '2007-07-28', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Adlm', 'Adlam', '2014-12-11', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'byn', 'Bilin; Blin', '2005-10-16', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'byo', 'Biyo', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'byp', 'Bumaji', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -20496,7 +20504,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'cky', 'Cakfem-Mushere', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'ckz', 'Cakchiquel-Quiché Mixed Language', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'cla', 'Ron', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clc', 'Chilcotin', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clc', 'Chilcotin; Tsilhqot’in', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'cld', 'Chaldean Neo-Aramaic', '2009-07-29', NULL, NULL, NULL, 'syr', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'cle', 'Lealao Chinantec', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clh', 'Chilisso', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -20504,7 +20512,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clj', 'Laitu Chin', '2012-08-12', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clk', 'Idu-Mishmi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'cll', 'Chala', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clm', 'Clallam', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clm', 'Klallam; Clallam', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clo', 'Lowland Oaxaca Chontal', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'cls', 'Classical Sanskrit', '2024-03-04', NULL, NULL, NULL, 'sa', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'clt', 'Lautu Chin', '2012-08-12', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -21558,7 +21566,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'gza', 'Ganza', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'gzi', 'Gazi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'gzn', 'Gane', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'haa', 'Han', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'haa', 'Hän', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'hab', 'Hanoi Sign Language', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'hac', 'Gurani', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'had', 'Hatam', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -22014,7 +22022,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'jmd', 'Yamdena', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'jmi', 'Jimi (Nigeria)', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'jml', 'Jumli', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Bali', 'Balinese', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Afak', 'Afaka', '2011-01-07', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'jmn', 'Makuri Naga', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'jmr', 'Kamara', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'jms', 'Mashi (Nigeria)', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -22626,9 +22634,10 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwh', 'Kowiai', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwi', 'Awa-Cuaiquer', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwj', 'Kwanga', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwk', 'Kwakiutl', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwk', 'Kwak''wala; Kwakiutl', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwl', 'Kofyar', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwm', 'Kwambi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mlym', 'Malayalam', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwn', 'Kwangali', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwo', 'Kwomtari', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'kwp', 'Kodia', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -23036,8 +23045,8 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'luo', 'Luo (Kenya and Tanzania); Dholuo', '2005-10-16', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'lup', 'Lumbu', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'luq', 'Lucumi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Modi', 'Modi; Moḍī', '2013-12-02', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'lur', 'Laura', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Bamu', 'Bamum', '2009-07-30', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'lus', 'Lushai', '2005-10-16', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'lut', 'Lushootseed', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'luu', 'Lumba-Yakkha', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -23256,7 +23265,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mhk', 'Mungaka', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mhl', 'Mauwake', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mhm', 'Makhuwa-Moniga', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mhn', 'Mócheno', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mhn', 'Mòcheno', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mho', 'Mashi (Zambia)', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mhp', 'Balinese Malay', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'mhq', 'Mandan', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -24562,8 +24571,8 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'plo', 'Oluta Popoluca', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'plp', 'Palpa', '2009-07-29', '2020-03-28', NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'plq', 'Palaic', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mong', 'Mongolian', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'plr', 'Palaka Senoufo', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Bass', 'Bassa Vah', '2010-04-10', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'pls', 'San Marcos Tlacoyalco Popoloca; San Marcos Tlalcoyalco Popoloca', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'plt', 'Plateau Malagasy', '2009-07-29', NULL, NULL, NULL, 'mg', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'plu', 'Palikúr', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -25591,7 +25600,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sdz', 'Sallands', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sea', 'Semai', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'seb', 'Shempire Senoufo', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sec', 'Sechelt', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sec', 'Sechelt; She shashishalhem', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sed', 'Sedang', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'see', 'Seneca', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sef', 'Cebaara Senoufo', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -25659,7 +25668,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'shp', 'Shipibo-Conibo', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'shq', 'Sala', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'shr', 'Shi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'shs', 'Shuswap', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'shs', 'Shuswap; Secwepemctsín', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sht', 'Shasta', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'shu', 'Chadian Arabic', '2009-07-29', NULL, NULL, NULL, 'ar', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'shv', 'Shehri', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -25742,6 +25751,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'slh', 'Southern Puget Sound Salish', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sli', 'Lower Silesian', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'slj', 'Salumá', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'FI', 'Finland', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sll', 'Salt-Yui', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'slm', 'Pangutaran Sama', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sln', 'Salinan', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -25856,7 +25866,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sqr', 'Siculo Arabic', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sqs', 'Sri Lankan Sign Language', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sqt', 'Soqotri', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'squ', 'Squamish', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'squ', 'Squamish; Sḵwx̱wú7mesh sníchim', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sqx', 'Kufr Qassem Sign Language (KQSL)', '2021-02-20', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'sra', 'Saruga', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'srb', 'Sora', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -26178,11 +26188,11 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thl', 'Dangaura Tharu', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thm', 'Aheu', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thn', 'Thachanadan', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thp', 'Thompson', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thp', 'Thompson; Nłeʔkepmxcín; Thompson River Salish', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thq', 'Kochila Tharu', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thr', 'Rana Tharu', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'ths', 'Thakali', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tht', 'Tahltan', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tht', 'Tahltan; Tāłtān', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thu', 'Thuri', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thv', 'Tahaggart Tamahaq', '2009-07-29', NULL, NULL, NULL, 'tmh', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'thw', 'Thudam', '2009-07-29', '2020-06-08', 'ola', NULL, NULL, 'individual', NULL);
@@ -26253,6 +26263,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tlg', 'Tofanma', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tlh', 'Klingon; tlhIngan Hol', '2005-10-16', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tli', 'Tlingit', '2005-10-16', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'FJ', 'Fiji', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tlj', 'Talinga-Bwisi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tlk', 'Taloki', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'tll', 'Tetela', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -26766,6 +26777,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'vor', 'Voro', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'vot', 'Votic', '2005-10-16', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'vra', 'Vera''a', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QR', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'vro', 'Võro', '2009-07-29', NULL, NULL, NULL, 'et', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'vrs', 'Varisi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'vrt', 'Burmbar; Banam Bay', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -26868,11 +26880,11 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wij', 'Wik-Iiyanh', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wik', 'Wikalkan', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wil', 'Wilawila', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QS', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wim', 'Wik-Mungkan', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'win', 'Ho-Chunk', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wir', 'Wiraféd', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wit', 'Wintu', '2009-07-29', '2013-09-10', NULL, NULL, NULL, 'individual', 'see nol, pwi, wnw');
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Batk', 'Batak', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wiu', 'Wiru', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wiv', 'Vitu', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'wiw', 'Wirangu', '2009-07-29', '2012-08-12', NULL, NULL, NULL, 'individual', 'see nwo, wgu');
@@ -27585,6 +27597,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'yzg', 'E''ma Buyang', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'yzk', 'Zokhuo', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zaa', 'Sierra de Juárez Zapotec', '2009-07-29', NULL, NULL, NULL, 'zap', 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QT', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zab', 'Western Tlacolula Valley Zapotec; San Juan Guelavía Zapotec', '2009-07-29', NULL, NULL, NULL, 'zap', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zac', 'Ocotlán Zapotec', '2009-07-29', NULL, NULL, NULL, 'zap', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zad', 'Cajonos Zapotec', '2009-07-29', NULL, NULL, NULL, 'zap', 'individual', NULL);
@@ -27684,7 +27697,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zmm', 'Marimanindji; Marramaninyshi', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zmn', 'Mbangwe', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zmo', 'Molo', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zmp', 'Mpuono', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zmp', 'Mbuun', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zmq', 'Mituku', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zmr', 'Maranunggu', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zms', 'Mbesa', '2009-07-29', NULL, NULL, NULL, NULL, 'individual', NULL);
@@ -27774,6 +27787,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zza', 'Zaza; Dimili; Dimli (macrolanguage); Kirdki; Kirmanjki (macrolanguage); Zazaki', '2006-08-24', NULL, NULL, NULL, NULL, 'macrolanguage', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('language', 'zzj', 'Zuojiang Zhuang', '2009-07-29', NULL, NULL, NULL, 'za', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'aao', 'Algerian Saharan Arabic', '2009-07-29', NULL, 'aao', NULL, 'ar', 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QU', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'abh', 'Tajiki Arabic', '2009-07-29', NULL, 'abh', NULL, 'ar', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'abv', 'Baharna Arabic', '2009-07-29', NULL, 'abv', NULL, 'ar', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'acm', 'Mesopotamian Arabic', '2009-07-29', NULL, 'acm', NULL, 'ar', 'individual', NULL);
@@ -27945,13 +27959,13 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'nsl', 'Norwegian Sign Language', '2009-07-29', NULL, 'nsl', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'nsp', 'Nepalese Sign Language', '2009-07-29', NULL, 'nsp', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'nsr', 'Maritime Sign Language', '2009-07-29', NULL, 'nsr', NULL, NULL, 'individual', NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QV', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'nzs', 'New Zealand Sign Language', '2009-07-29', NULL, 'nzs', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'okl', 'Old Kentish Sign Language', '2009-07-29', NULL, 'okl', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'orn', 'Orang Kanaq', '2009-07-29', NULL, 'orn', NULL, 'ms', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'ors', 'Orang Seletar', '2009-07-29', NULL, 'ors', NULL, 'ms', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'pel', 'Pekal', '2009-07-29', NULL, 'pel', NULL, 'ms', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'pga', 'Sudanese Creole Arabic', '2009-07-29', NULL, 'pga', NULL, 'ar', 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Beng', 'Bengali; Bangla', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'pgz', 'Papua New Guinean Sign Language', '2016-05-30', NULL, 'pgz', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'pks', 'Pakistan Sign Language', '2009-07-29', NULL, 'pks', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'prl', 'Peruvian Sign Language', '2009-07-29', NULL, 'prl', NULL, NULL, 'individual', NULL);
@@ -28030,14 +28044,18 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'zmi', 'Negeri Sembilan Malay', '2009-07-29', NULL, 'zmi', NULL, 'ms', 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'zsl', 'Zambian Sign Language', '2009-07-29', NULL, 'zsl', NULL, NULL, 'individual', NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('extlang', 'zsm', 'Standard Malay', '2009-07-29', NULL, 'zsm', NULL, 'ms', 'individual', NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Adlm', 'Adlam', '2014-12-11', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Afak', 'Afaka', '2011-01-07', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Aghb', 'Caucasian Albanian', '2012-11-01', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Ahom', 'Ahom; Tai Ahom', '2013-12-02', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Arab', 'Arabic', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Aran', 'Arabic (Nastaliq variant)', '2014-12-11', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Armi', 'Imperial Aramaic', '2007-12-05', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Armn', 'Armenian', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Avst', 'Avestan', '2007-07-28', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Bali', 'Balinese', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Bamu', 'Bamum', '2009-07-30', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Bass', 'Bassa Vah', '2010-04-10', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Batk', 'Batak', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Beng', 'Bengali; Bangla', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Berf', 'Beria Erfe', '2025-02-06', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Bhks', 'Bhaiksuki', '2015-07-24', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Blis', 'Blissymbols', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
@@ -28140,9 +28158,6 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mend', 'Mende Kikakui', '2010-04-10', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Merc', 'Meroitic Cursive', '2009-12-09', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mero', 'Meroitic Hieroglyphs', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mlym', 'Malayalam', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Modi', 'Modi; Moḍī', '2013-12-02', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mong', 'Mongolian', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Moon', 'Moon; Moon code; Moon script; Moon type', '2007-01-26', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mroo', 'Mro; Mru', '2011-01-07', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('script', 'Mtei', 'Meitei Mayek; Meithei; Meetei', '2007-01-26', NULL, NULL, NULL, NULL, NULL, NULL);
@@ -28379,8 +28394,6 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'ET', 'Ethiopia', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'EU', 'European Union', '2009-07-29', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'EZ', 'Eurozone', '2016-07-14', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'FI', 'Finland', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'FJ', 'Fiji', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'FK', 'Falkland Islands (Malvinas)', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'FM', 'Federated States of Micronesia', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'FO', 'Faroe Islands', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
@@ -28505,11 +28518,6 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QO', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QP', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QQ', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QR', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QS', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QT', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QU', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QV', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QW', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QX', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('region', 'QY', 'Private use', '2005-10-16', NULL, NULL, NULL, NULL, NULL, NULL);
@@ -28688,7 +28696,6 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'fonkirsh', 'Kirshenbaum Phonetic Alphabet', '2018-04-22', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'fonnapa', 'North American Phonetic Alphabet; Americanist Phonetic Notation', '2016-06-24', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'fonupa', 'Uralic Phonetic Alphabet', '2006-12-11', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'scotland', 'Scottish Standard English', '2007-08-31', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'fonxsamp', 'X-SAMPA transcription', '2010-10-23', NULL, NULL, NULL, NULL, NULL, 'Indicates that the content is transcribed according to X-SAMPA');
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'gallo', 'Gallo', '2021-08-05', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'gascon', 'Gascon', '2018-04-22', NULL, NULL, NULL, NULL, NULL, 'Occitan variant spoken in Gascony');
@@ -28749,6 +28756,7 @@ INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, prefe
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'rumgr', 'Rumantsch Grischun', '2010-06-29', NULL, NULL, NULL, NULL, NULL, 'Supraregional Romansh written standard');
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'sahidic', 'Sahidic dialect of Coptic', '2025-07-14', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'saigon', 'The Sài Gòn variant of Vietnamese', '2025-03-10', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'scotland', 'Scottish Standard English', '2007-08-31', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'scouse', 'Scouse', '2006-09-18', NULL, NULL, NULL, NULL, NULL, 'English Liverpudlian dialect known as ''Scouse''');
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'simple', 'Simplified form', '2015-12-29', NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO public.subtag (type, id, description, added_on, deprecated_on, preferred_value, suppress_script, macrolanguage, scope, comments) VALUES ('variant', 'solba', 'The Stolvizza dialect of Resian; The Solbica dialect of Resian', '2007-07-05', NULL, NULL, NULL, NULL, NULL, 'The dialect of Stolvizza/Solbica is one of the four major local dialects of Resian');
@@ -30890,7 +30898,7 @@ ALTER TABLE ONLY public.un_m49
     ADD CONSTRAINT un_m49_type_fkey FOREIGN KEY (type) REFERENCES public.un_m49_type(type);
 
 
--- Completed on 2025-07-15 21:42:34 UTC
+-- Completed on 2025-09-09 22:30:07 UTC
 
 --
 -- PostgreSQL database dump complete
