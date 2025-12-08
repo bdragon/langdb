@@ -1,4 +1,4 @@
-FROM eclipse-temurin:24-jdk-alpine AS build
+FROM eclipse-temurin:25-jdk-alpine AS build
 
 ENV MAVEN_HOME=/usr/share/maven
 
@@ -14,7 +14,7 @@ RUN /usr/bin/mvn -pl :langdb-transform -am -DskipTests clean package
 
 # ============================================================================
 
-FROM eclipse-temurin:24-jdk-alpine
+FROM eclipse-temurin:25-jdk-alpine
 
 VOLUME /mnt/data
 
